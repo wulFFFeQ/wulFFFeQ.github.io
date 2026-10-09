@@ -1,0 +1,247 @@
+/* Page-specific polish for Žádost o termín (design 1). */
+
+.page-hero--request {
+  padding-bottom: 1.7rem;
+}
+
+.page-hero--request + .request-section {
+  padding-top: 2.15rem;
+}
+
+.page-hero-request {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 20rem);
+  gap: 1.75rem 4rem;
+  align-items: end;
+}
+
+.page-hero--request h1 {
+  margin-bottom: 0.7em;
+}
+
+.page-hero--request p {
+  margin: 0;
+}
+
+.page-hero-request-how {
+  padding: 0.15rem 0 0.2rem 1.85rem;
+  border-left: 1px solid rgba(154, 123, 79, 0.32);
+}
+
+.page-hero-request-how .section-label {
+  margin-bottom: 0.95rem;
+}
+
+.how-mini {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.how-mini li {
+  display: grid;
+  grid-template-columns: 1.7rem 1fr;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.38rem 0;
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--color-ink);
+}
+
+.how-mini li span {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--color-metal);
+}
+
+.process-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.process-steps li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.7rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid rgba(154, 123, 79, 0.18);
+}
+
+.process-steps li:first-child {
+  padding-top: 0.15rem;
+}
+
+.process-steps li:last-child {
+  border-bottom: none;
+  padding-bottom: 0.15rem;
+}
+
+.process-num {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--color-metal);
+  padding-top: 0.28rem;
+}
+
+.process-steps h3 {
+  margin: 0 0 0.28rem;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.process-steps p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--color-ink-soft);
+}
+
+.request-aside-follow {
+  margin: 0.45rem 0 0 !important;
+  font-size: 0.92rem !important;
+}
+
+.request-acute {
+  margin-top: 1rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(166, 92, 58, 0.28);
+}
+
+.request-acute-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a4a2a;
+}
+
+.request-acute p + p {
+  margin: 0 0 0.55rem;
+  color: var(--color-ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.request-acute a {
+  display: inline-block;
+  color: #8a4a2a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(138, 74, 42, 0.35);
+  text-underline-offset: 0.18em;
+}
+
+.request-acute a:hover {
+  border-bottom-color: #8a4a2a;
+}
+
+.request-section {
+  padding-bottom: 2.5rem;
+  min-height: 0;
+}
+
+.request-section.is-complete {
+  padding-bottom: 2rem;
+}
+
+.request-layout {
+  scroll-margin-top: calc(var(--header-h) + 0.85rem);
+}
+
+.request-layout:has(#requestForm[hidden]) .request-aside {
+  position: static;
+}
+
+.request-layout .form-card {
+  padding: 2rem 1.9rem 1.75rem;
+  box-shadow:
+    0 1px 0 rgba(255, 252, 246, 0.9) inset,
+    0 16px 36px rgba(24, 40, 32, 0.045);
+}
+
+.request-layout .form-success {
+  width: 88%;
+  max-width: none;
+  margin-top: 0;
+  padding: 1.2rem 1.35rem 1.15rem;
+  background: #f5f8f4;
+  border: 1px solid rgba(27, 92, 76, 0.16);
+  color: var(--color-ink);
+}
+
+.form-success-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 0.5rem !important;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.form-success-mark {
+  display: inline-flex;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.request-layout .form-success p {
+  color: var(--color-ink-soft);
+  max-width: 44ch;
+}
+
+.request-layout .form-success p + p {
+  margin-top: 0.8rem;
+}
+
+.request-layout .form-success .btn {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .page-hero-request {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .page-hero-request-how {
+    padding: 0.15rem 0 0;
+    border-left: none;
+  }
+
+  .how-mini {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .request-layout .form-success {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .request-layout .form-card {
+    padding: 1.45rem 1.15rem 1.3rem;
+  }
+
+  .request-layout .form-success {
+    padding: 1.1rem 1.15rem 1.05rem;
+  }
+}

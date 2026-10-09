@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Přednávštěvní dotazník — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-7/theme.css" />
+  </head>
+  <body>
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/design-7/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-7/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-7/zadost/cenik.html">Ceník</a>
+          <a href="/design-7/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-7/zadost/tym.html">Tým</a>
+          <a href="/design-7/zadost/galerie.html">Galerie</a>
+          <a href="/design-7/zadost/recenze.html">Recenze</a>
+          <a href="/design-7/zadost/dotaznik.html">Dotazník</a>
+          <a href="/design-7/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta" href="/design-7/zadost/zadost.html">Žádost o termín</a>
+          <a href="/design-7/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="intake-hero intake-hero--split">
+        <div class="intake-hero-panel">
+          <p class="intake-hero-brand">Veterinární klinika</p>
+          <span class="section-label">Před návštěvou</span>
+          <h1>Krátký dotazník</h1>
+          <p>Tři odpovědi místo telefonátu — sestra pošle odkaz po potvrzení termínu.</p>
+        </div>
+        <div class="intake-hero-media" role="img" aria-label="Recepce kliniky"></div>
+      </header>
+
+      <section class="intake-sheet">
+        <div class="intake-layout">
+          <aside class="intake-aside">
+            <h2>Proč to vyplnit</h2>
+            <ul>
+              <li>
+                <strong>Lékař je připraven</strong>
+                <span>Má kontext dřív, než vejdete do ordinace.</span>
+              </li>
+              <li>
+                <strong>Kratší hovor</strong>
+                <span>Základní věci nemusíte opakovat po telefonu.</span>
+              </li>
+              <li>
+                <strong>Jen pro tým</strong>
+                <span>Odpovědi vidí klinika, ne veřejnost.</span>
+              </li>
+            </ul>
+          </aside>
+
+          <form class="intake-form" id="questionnaireForm">
+            <ol class="intake-list">
+              <li class="intake-item">
+                <div class="intake-item-head">
+                  <span>1</span>
+                  <div>
+                    <label for="meds">Aktuální léky</label>
+                    <p>Názvy a dávkování, nebo napište „žádné“.</p>
+                  </div>
+                </div>
+                <textarea id="meds" name="meds" placeholder="Např. Apoquel 16 mg ráno…"></textarea>
+              </li>
+
+              <li class="intake-item">
+                <div class="intake-item-head">
+                  <span>2</span>
+                  <div>
+                    <label for="allergies">Alergie</label>
+                    <p>Léky, krmivo nebo jiné reakce.</p>
+                  </div>
+                </div>
+                <textarea id="allergies" name="allergies" placeholder="Léky, krmivo, jiné…"></textarea>
+              </li>
+
+              <li class="intake-item">
+                <div class="intake-item-head">
+                  <span>3</span>
+                  <div>
+                    <label for="symptoms">Vývoj příznaků</label>
+                    <p>Od kdy to trvá a co se změnilo.</p>
+                  </div>
+                </div>
+                <textarea id="symptoms" name="symptoms" placeholder="Od kdy, co se zhoršilo / zlepšilo…"></textarea>
+              </li>
+
+              <li class="intake-item">
+                <div class="intake-item-head">
+                  <span>4</span>
+                  <div>
+                    <label for="email">Váš e-mail</label>
+                    <p>Na tento e-mail vám napíšeme zpět.</p>
+                  </div>
+                </div>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  placeholder="vas@email.cz"
+                />
+              </li>
+            </ol>
+
+            <div class="intake-foot">
+              <label class="intake-consent">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span>Souhlasím se zpracováním údajů pro účely vyšetření (ukázkový text GDPR).</span>
+              </label>
+              <button class="btn btn-primary" type="submit">Odeslat dotazník</button>
+              <p class="intake-note">Odesláním nic neplatíte — jde jen o přípravu návštěvy.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="intake-success" id="qSuccess" hidden>
+          <h2>Dotazník je u týmu</h2>
+          <p>V ostré verzi by odpovědi viděl tým před příchodem pacienta. Děkujeme.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Design 7 · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script src="../enhance.js"></script>
+    <script>
+      document.getElementById("questionnaireForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!this.checkValidity()) {
+          this.reportValidity();
+          return;
+        }
+        this.hidden = true;
+        document.querySelector(".intake-aside").hidden = true;
+        var success = document.getElementById("qSuccess");
+        success.hidden = false;
+      });
+    </script>
+  <script src="../../protect.js" defer></script></body>
+</html>

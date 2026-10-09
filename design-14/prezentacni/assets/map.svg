@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="title desc">
+ <title id="title">TERRA — ilustrační mapa</title>
+ <desc id="desc">Schematická mapa s označením kliniky. Neslouží k navigaci.</desc>
+ <rect width="800" height="440" fill="#e7e4d9"/>
+ <g fill="#c7d2b5"><path d="M0 0h225l-48 122L0 166Z"/><path d="m560 0 240 0v123l-203-23Z"/><path d="m0 327 150-44 80 157H0Z"/><path d="m631 292 169-23v171H681Z"/></g>
+ <g fill="#d6d1c3" stroke="#eeebe2" stroke-width="3"><path d="m242 29 80 16-16 74-85-18Z"/><path d="m355 51 100 18-17 81-103-17Z"/><path d="m497 80 60 10 18 62-94 9Z"/><path d="m81 196 100-28 17 59-97 29Z"/><path d="m224 160 83 16-14 62-87-5Z"/><path d="m471 208 106-11 11 71-100 28Z"/><path d="m646 166 96-11 14 67-91 26Z"/><path d="m262 316 71-15 31 93-84 20Z"/><path d="m393 310 59-12 37 105-64 21Z"/><path d="m516 340 78-20 31 88-80 27Z"/></g>
+ <g fill="none" stroke="#fdfbf4" stroke-linecap="round" stroke-linejoin="round"><path d="M-25 310 270 250 831 147" stroke-width="25"/><path d="M176-30 257 193 303 266 382 473" stroke-width="21"/><path d="M416-20 390 119 450 245 523 467" stroke-width="19"/><path d="M587-20 627 167 666 295 725 473" stroke-width="15"/><path d="M-20 157 202 128 395 166 618 129 823 98" stroke-width="12"/><path d="M173 462 197 343 444 280 636 282 825 231" stroke-width="11"/></g>
+ <path d="M-25 310 270 250 831 147" fill="none" stroke="#d3ccb9" stroke-width="2" stroke-dasharray="7 10"/>
+ <circle cx="414" cy="229" r="48" fill="#243e2520"/>
+ <path d="M414 230s-28-30-28-49a28 28 0 0 1 56 0c0 19-28 49-28 49Z" fill="#203a25" stroke="#fffdf5" stroke-width="4"/>
+ <circle cx="414" cy="181" r="9" fill="#f8f5ea"/>
+ <rect x="457" y="143" width="158" height="64" rx="11" fill="#fffdf5" stroke="#d9d4c5"/>
+ <text x="477" y="172" fill="#203a25" font-family="Georgia,serif" font-size="25">TERRA</text>
+ <text x="477" y="190" fill="#58634e" font-family="Arial,sans-serif" font-size="12">veterinární klinika</text>
+ <rect x="20" y="390" width="161" height="29" rx="7" fill="#fffdf5"/>
+ <text x="33" y="409" fill="#58634e" font-family="Arial,sans-serif" font-size="13">Ilustrační mapa</text>
+</svg>

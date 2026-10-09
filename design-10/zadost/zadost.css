@@ -1,0 +1,18 @@
+/* Compact confirmation layout only — form styles are untouched. */
+
+.request-section.is-complete {
+  padding-top: clamp(1.4rem, 3.2vw, 2.35rem);
+  padding-bottom: 1.65rem;
+  min-height: 0;
+  scroll-margin-top: calc(var(--header-h) + 0.5rem);
+}
+
+.request-section.is-complete::before,
+.request-section.is-complete::after {
+  content: none;
+  display: none;
+}
+
+.request-section.is-complete .request-orb {
+  display: none;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Žádost o termín — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-9/theme.css" />
+    <link rel="stylesheet" href="/design-9/zadost/zadost.css" />
+  </head>
+  <body>
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/design-9/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-9/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-9/zadost/cenik.html">Ceník</a>
+          <a href="/design-9/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-9/zadost/tym.html">Tým</a>
+          <a href="/design-9/zadost/galerie.html">Galerie</a>
+          <a href="/design-9/zadost/recenze.html">Recenze</a>
+          <a href="/design-9/zadost/dotaznik.html">Dotazník</a>
+          <a href="/design-9/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta" href="/design-9/zadost/zadost.html">Žádost o termín</a>
+          <a href="/design-9/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="section-label">Objednání</span>
+          <h1>Žádost o termín</h1>
+          <p>
+            Nevybíráte volný slot sami — pošlete žádost, sestra ji ráno zapíše
+            do systému a ozve se vám SMS nebo e-mailem — podle vaší preference.
+          </p>
+        </div>
+      </header>
+
+      <section class="section request-confirm-page">
+        <div class="container reveal">
+          <div class="alert">
+            <strong>Jak to funguje:</strong> žádost přijde na kliniku → sestra
+            zapíše termín ručně → klient dostane SMS nebo e-mail. Po potvrzení může přijít
+            odkaz na
+            <a href="/design-9/zadost/dotaznik.html"><u>přednávštěvní dotazník</u></a>.
+          </div>
+
+          <form class="form-card" id="requestForm" novalidate>
+            <div class="field-row field-row-equal">
+              <div class="field">
+                <label for="petType">Druh zvířete</label>
+                <select id="petType" name="petType" required>
+                  <option value="">Vyberte…</option>
+                  <option value="pes">Pes</option>
+                  <option value="kocka">Kočka</option>
+                  <option value="jine">Jiné</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="petAge">Věk zvířete</label>
+                <input id="petAge" name="petAge" type="text" required placeholder="např. 3 roky" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="reason">Důvod návštěvy</label>
+              <textarea id="reason" name="reason" required placeholder="Stručně popište problém nebo požadavek"></textarea>
+            </div>
+
+            <div class="field">
+              <label>Urgentnost</label>
+              <div class="radio-row" id="urgencyGroup">
+                <label class="radio-pill">
+                  <input type="radio" name="urgency" value="routine" checked />
+                  <span>Běžné</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="urgency" value="week" />
+                  <span>Někdy tento týden</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="urgency" value="acute" />
+                  <span>Akutně dnes</span>
+                </label>
+              </div>
+            </div>
+
+            <div id="acuteBlock" class="alert alert-urgent" hidden>
+              <h3>Akutní stav — volejte teď</h3>
+              <p>
+                U akutních případů termín neobjednáváme formulářem. Zavolejte
+                ihned na <a href="tel:+420777000000"><strong>+420 777 000 000</strong></a>.
+              </p>
+              <p>
+                Mimo ordinační dobu postupujte podle stránky
+                <a href="/design-9/zadost/pohotovost.html"><u>Je to urgentní?</u></a>
+              </p>
+            </div>
+
+            <div id="scheduleFields">
+              <div class="field">
+                <label>Jste</label>
+                <div class="radio-row">
+                  <label class="radio-pill">
+                    <input type="radio" name="patient" value="new" checked />
+                    <span>Nový klient</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="patient" value="existing" />
+                    <span>Stávající klient</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="pref1">Preferovaný termín 1</label>
+                  <input id="pref1" name="pref1" type="text" placeholder="např. úterý dopoledne" />
+                </div>
+                <div class="field">
+                  <label for="pref2">Preferovaný termín 2</label>
+                  <input id="pref2" name="pref2" type="text" placeholder="např. čtvrtek odpoledne" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" required placeholder="+420 …" autocomplete="tel" />
+              </div>
+
+              <div class="field">
+                <label for="email">Váš e-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="vas@email.cz"
+                  autocomplete="email"
+                />
+              </div>
+              <fieldset class="field contact-pref">
+                <legend>Jak vám máme potvrdit termín?</legend>
+                <div class="radio-row" role="group" aria-label="Preferovaný kontakt">
+                  <label class="radio-pill">
+                    <input type="checkbox" name="contactPref" id="prefSms" value="sms" />
+                    <span>SMS</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="checkbox" name="contactPref" id="prefEmail" value="email" />
+                    <span>E-mail</span>
+                  </label>
+                </div>
+                <p class="field-hint">Zvolte SMS, e-mail, nebo obojí.</p>
+              </fieldset>
+
+
+              <button class="btn btn-primary" type="submit">Odeslat žádost</button>
+            </div>
+          </form>
+
+          <div class="form-success" id="requestSuccess">
+            <h3>Žádost odeslána <span class="form-success-demo">(ukázka)</span></h3>
+            <p id="successDetail">
+              V ostré verzi by žádost dorazila sestře. Ta ji zapíše do systému a
+              ozve se vám SMS nebo e-mailem — podle vaší preference. Po potvrzení můžete dostat odkaz na dotazník.
+            </p>
+            <p>
+              <a class="btn btn-outline" href="/design-9/zadost/dotaznik.html">Ukázka přednávštěvního dotazníku</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Design 9 · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script src="zadost.js"></script>
+  <script src="../../protect.js" defer></script></body>
+</html>

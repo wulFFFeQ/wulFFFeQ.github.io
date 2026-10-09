@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" aria-hidden="true">
+  <defs>
+    <radialGradient id="pPetal" cx="48%" cy="78%" r="78%">
+      <stop offset="0" stop-color="#FDE7E1" />
+      <stop offset="45%" stop-color="#F8C9BF" />
+      <stop offset="100%" stop-color="#E7A294" />
+    </radialGradient>
+    <g id="pShape">
+      <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" fill="url(#pPetal)" />
+    </g>
+  </defs>
+  <use href="#pShape" transform="translate(42 54) rotate(24) scale(1.1)" opacity=".85" />
+  <use href="#pShape" transform="translate(132 28) rotate(-62) scale(.8)" opacity=".7" />
+  <use href="#pShape" transform="translate(226 76) rotate(142) scale(1)" opacity=".8" />
+  <use href="#pShape" transform="translate(74 148) rotate(-18) scale(.9)" opacity=".62" />
+  <use href="#pShape" transform="translate(186 172) rotate(78) scale(1.15)" opacity=".78" />
+  <use href="#pShape" transform="translate(268 216) rotate(-36) scale(.75)" opacity=".6" />
+  <use href="#pShape" transform="translate(36 244) rotate(106) scale(1.05)" opacity=".72" />
+  <use href="#pShape" transform="translate(140 272) rotate(-96) scale(.85)" opacity=".66" />
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420" aria-hidden="true">
+  <defs>
+    <radialGradient id="bPetal" cx="48%" cy="78%" r="78%">
+      <stop offset="0" stop-color="#FDE7E1" />
+      <stop offset="45%" stop-color="#F8C9BF" />
+      <stop offset="100%" stop-color="#E59C8F" />
+    </radialGradient>
+    <radialGradient id="bWash" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F6BDAE" stop-opacity=".46" />
+      <stop offset="60%" stop-color="#F6BDAE" stop-opacity=".2" />
+      <stop offset="100%" stop-color="#F6BDAE" stop-opacity="0" />
+    </radialGradient>
+    <filter id="bSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+    <filter id="bHaze" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+
+    <g id="bFlower">
+      <circle r="28" fill="url(#bWash)" />
+      <g filter="url(#bHaze)" opacity=".7">
+        <g fill="url(#bPetal)">
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="scale(1.2)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(72) scale(1.2)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(144) scale(1.2)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(216) scale(1.2)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(288) scale(1.2)" />
+        </g>
+      </g>
+      <g fill="url(#bPetal)">
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(72)" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(144)" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(216)" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(288)" />
+      </g>
+      <g stroke="#CE7F6C" stroke-width="1" stroke-linecap="round" opacity=".68">
+        <path d="M0,0 L0,-8" />
+        <path d="M0,0 L6,-5.5" />
+        <path d="M0,0 L-6,-5.5" />
+        <path d="M0,0 L4,4.5" />
+        <path d="M0,0 L-4,4.5" />
+      </g>
+      <circle r="2.2" fill="#BC6753" />
+    </g>
+
+    <g id="bBud">
+      <circle r="11" fill="url(#bWash)" />
+      <path d="M0,0 C-6,-2.6 -8.6,-9.6 -5.2,-13.8 C-2,-17.6 2,-17.6 5.2,-13.8 C8.6,-9.6 6,-2.6 0,0 Z" fill="url(#bPetal)" />
+    </g>
+  </defs>
+
+  <g filter="url(#bSoft)" opacity=".45">
+    <ellipse cx="96" cy="330" rx="120" ry="92" fill="#F9CFC3" opacity=".5" />
+    <ellipse cx="236" cy="226" rx="92" ry="74" fill="#F7C2B4" opacity=".36" />
+  </g>
+
+  <g fill="none" stroke="#B4836E" stroke-linecap="round" opacity=".58">
+    <path d="M-10,414 C56,392 118,350 176,292 C234,234 288,186 352,154" stroke-width="3" />
+    <path d="M176,292 C184,250 198,214 222,186" stroke-width="2" />
+    <path d="M118,350 C112,310 118,276 136,246" stroke-width="1.8" />
+    <path d="M288,186 C300,218 304,248 298,278" stroke-width="1.6" />
+  </g>
+
+  <use href="#bBud" transform="translate(224 184) rotate(-26) scale(1.05)" />
+  <use href="#bBud" transform="translate(138 244) rotate(18) scale(.95)" />
+  <use href="#bBud" transform="translate(300 280) rotate(140) scale(.9)" />
+
+  <use href="#bFlower" transform="translate(44 396) rotate(-18) scale(1.45)" />
+  <use href="#bFlower" transform="translate(132 342) rotate(26) scale(1.75)" />
+  <use href="#bFlower" transform="translate(220 268) rotate(-40) scale(1.35)" />
+  <use href="#bFlower" transform="translate(292 206) rotate(12) scale(1.6)" />
+  <use href="#bFlower" transform="translate(366 150) rotate(-14) scale(1.2)" />
+
+  <g fill="url(#bPetal)" opacity=".75">
+    <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="translate(188 376) rotate(118) scale(.9)" />
+    <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="translate(286 330) rotate(-58) scale(.8)" />
+    <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="translate(360 262) rotate(42) scale(.95)" />
+  </g>
+</svg>

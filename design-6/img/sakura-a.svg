@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560" aria-hidden="true">
+  <defs>
+    <radialGradient id="aPetal" cx="48%" cy="78%" r="78%">
+      <stop offset="0" stop-color="#FDE5DF" />
+      <stop offset="45%" stop-color="#F8C6BB" />
+      <stop offset="100%" stop-color="#E79A8E" />
+    </radialGradient>
+    <radialGradient id="aWash" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F7BFB1" stop-opacity=".5" />
+      <stop offset="60%" stop-color="#F7BFB1" stop-opacity=".22" />
+      <stop offset="100%" stop-color="#F7BFB1" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="aLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#CFA48C" />
+      <stop offset="100%" stop-color="#B98874" />
+    </linearGradient>
+    <filter id="aSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" />
+    </filter>
+    <filter id="aHaze" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" />
+    </filter>
+
+    <g id="aFlower">
+      <circle r="30" fill="url(#aWash)" />
+      <g filter="url(#aSoft)" opacity=".55">
+        <circle r="17" fill="#F3B3A4" />
+      </g>
+      <g filter="url(#aHaze)" opacity=".75">
+        <g fill="url(#aPetal)">
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="scale(1.18)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(72) scale(1.18)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(144) scale(1.18)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(216) scale(1.18)" />
+          <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(288) scale(1.18)" />
+        </g>
+      </g>
+      <g fill="url(#aPetal)">
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(72)" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(144)" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(216)" />
+        <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="rotate(288)" />
+      </g>
+      <g stroke="#CE7F6C" stroke-width="1" stroke-linecap="round" opacity=".7">
+        <path d="M0,0 L0,-8" />
+        <path d="M0,0 L6,-5.5" />
+        <path d="M0,0 L-6,-5.5" />
+        <path d="M0,0 L4,4.5" />
+        <path d="M0,0 L-4,4.5" />
+      </g>
+      <g fill="#C8705C" opacity=".85">
+        <circle cx="0" cy="-8.4" r="1.1" />
+        <circle cx="6.3" cy="-5.8" r="1.1" />
+        <circle cx="-6.3" cy="-5.8" r="1.1" />
+        <circle cx="4.2" cy="4.8" r="1.1" />
+        <circle cx="-4.2" cy="4.8" r="1.1" />
+      </g>
+      <circle r="2.3" fill="#BC6753" />
+    </g>
+
+    <g id="aBud">
+      <circle r="12" fill="url(#aWash)" />
+      <path d="M0,0 C-6,-2.6 -8.6,-9.6 -5.2,-13.8 C-2,-17.6 2,-17.6 5.2,-13.8 C8.6,-9.6 6,-2.6 0,0 Z" fill="url(#aPetal)" />
+      <path d="M0,-1 C-3.4,-2.4 -4.6,-7 -2.6,-9.8" stroke="#D98B79" stroke-width=".9" fill="none" opacity=".7" />
+    </g>
+
+    <g id="aLeafShape">
+      <path d="M0,0 C10,-14 30,-20 44,-16 C38,-2 20,6 0,0 Z" fill="url(#aLeaf)" opacity=".75" />
+      <path d="M1,-1 C14,-8 28,-13 41,-15" stroke="#9E7260" stroke-width="1" fill="none" opacity=".5" />
+    </g>
+  </defs>
+
+  <!-- watercolour haze behind the cluster -->
+  <g filter="url(#aSoft)" opacity=".5">
+    <ellipse cx="420" cy="120" rx="150" ry="110" fill="#F9CCC0" opacity=".55" />
+    <ellipse cx="250" cy="250" rx="110" ry="88" fill="#F7C0B2" opacity=".4" />
+    <ellipse cx="120" cy="380" rx="95" ry="70" fill="#F9D3C6" opacity=".35" />
+  </g>
+
+  <!-- branch -->
+  <g fill="none" stroke="#B4836E" stroke-linecap="round" opacity=".62">
+    <path d="M560,34 C470,56 392,92 320,150 C248,208 182,286 120,392 C96,432 76,474 60,520" stroke-width="3.4" />
+    <path d="M392,92 C372,132 364,172 368,214" stroke-width="2.2" />
+    <path d="M262,196 C232,206 206,226 186,254" stroke-width="2" />
+    <path d="M182,286 C196,318 200,348 194,382" stroke-width="1.8" />
+    <path d="M120,392 C88,396 60,410 36,434" stroke-width="1.7" />
+  </g>
+
+  <use href="#aLeafShape" transform="translate(372 104) rotate(28) scale(.9)" />
+  <use href="#aLeafShape" transform="translate(206 254) rotate(-150) scale(.8)" />
+  <use href="#aLeafShape" transform="translate(126 398) rotate(64) scale(.7)" />
+
+  <use href="#aBud" transform="translate(368 216) rotate(24) scale(1.1)" />
+  <use href="#aBud" transform="translate(196 386) rotate(-36) scale(1)" />
+  <use href="#aBud" transform="translate(40 440) rotate(142) scale(.95)" />
+  <use href="#aBud" transform="translate(470 58) rotate(-22) scale(.9)" />
+
+  <use href="#aFlower" transform="translate(508 46) rotate(14) scale(1.5)" />
+  <use href="#aFlower" transform="translate(404 86) rotate(-28) scale(1.9)" />
+  <use href="#aFlower" transform="translate(300 148) rotate(36) scale(1.45)" />
+  <use href="#aFlower" transform="translate(238 212) rotate(-12) scale(1.75)" />
+  <use href="#aFlower" transform="translate(162 300) rotate(52) scale(1.3)" />
+  <use href="#aFlower" transform="translate(112 384) rotate(-40) scale(1.65)" />
+  <use href="#aFlower" transform="translate(62 476) rotate(18) scale(1.25)" />
+
+  <!-- loose petals drifting away from the branch -->
+  <g fill="url(#aPetal)" opacity=".8">
+    <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="translate(330 262) rotate(126) scale(.95)" />
+    <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="translate(268 346) rotate(-66) scale(.85)" />
+    <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="translate(188 448) rotate(34) scale(1.05)" />
+    <path d="M0,0 C-8,-3.4 -11.4,-12.6 -6.8,-18.2 C-4,-21.6 -1.1,-20.5 0,-17.6 C1.1,-20.5 4,-21.6 6.8,-18.2 C11.4,-12.6 8,-3.4 0,0 Z" transform="translate(452 196) rotate(-104) scale(.8)" />
+  </g>
+</svg>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Přednávštěvní dotazník — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-3/theme.css" />
+  </head>
+  <body class="page-dotaznik">
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/design-3/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-3/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-3/zadost/cenik.html">Ceník</a>
+          <a href="/design-3/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-3/zadost/tym.html">Tým</a>
+          <a href="/design-3/zadost/galerie.html">Galerie</a>
+          <a href="/design-3/zadost/recenze.html">Recenze</a>
+          <a href="/design-3/zadost/dotaznik.html">Dotazník</a>
+          <a href="/design-3/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta" href="/design-3/zadost/zadost.html">Žádost o termín</a>
+          <a href="/design-3/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero" data-shot="kitten">
+        <div class="page-hero-media" aria-hidden="true"></div>
+        <div class="container page-hero-inner reveal">
+          <a class="page-hero-back" href="/design-3/zadost/zadost.html">← Žádost o termín</a>
+          <p class="page-hero-kicker">Dotazník</p>
+          <h1>Krátký dotazník</h1>
+          <p class="page-hero-lead">
+            Po potvrzení termínu pošle sestra odkaz na tuto stránku — místo dlouhého telefonátu.
+          </p>
+        </div>
+      </header>
+
+      <section class="section intake-section">
+        <div class="container">
+          <div class="intake-board reveal">
+            <div class="intake-shell" id="intakeShell">
+              <span class="intake-scan" aria-hidden="true"></span>
+
+              <div class="intake-status">
+                <span class="svc-console-chip">In</span>
+                <div>
+                  <h2>Anamnéza před návštěvou</h2>
+                  <p>3 otázky · cca 2 minuty</p>
+                </div>
+                <div class="intake-progress" aria-hidden="true">
+                  <span class="is-on" data-step="0"></span>
+                  <span data-step="1"></span>
+                  <span data-step="2"></span>
+                </div>
+              </div>
+
+              <form class="intake-form" id="questionnaireForm">
+                <ol class="intake-modules">
+                  <li class="intake-module">
+                    <div class="intake-module-head">
+                      <span class="intake-module-num" aria-hidden="true">01</span>
+                      <label for="meds">Aktuální léky</label>
+                    </div>
+                    <textarea
+                      id="meds"
+                      name="meds"
+                      rows="3"
+                      placeholder="Názvy léků a dávkování, nebo „žádné“"
+                      data-step="0"
+                    ></textarea>
+                  </li>
+                  <li class="intake-module">
+                    <div class="intake-module-head">
+                      <span class="intake-module-num" aria-hidden="true">02</span>
+                      <label for="allergies">Alergie</label>
+                    </div>
+                    <textarea
+                      id="allergies"
+                      name="allergies"
+                      rows="3"
+                      placeholder="Léky, krmivo, jiné…"
+                      data-step="1"
+                    ></textarea>
+                  </li>
+                  <li class="intake-module">
+                    <div class="intake-module-head">
+                      <span class="intake-module-num" aria-hidden="true">03</span>
+                      <label for="symptoms">Vývoj příznaků</label>
+                    </div>
+                    <textarea
+                      id="symptoms"
+                      name="symptoms"
+                      rows="3"
+                      placeholder="Od kdy, co se zhoršilo / zlepšilo"
+                      data-step="2"
+                    ></textarea>
+                  </li>
+                </ol>
+
+                <div class="field intake-email">
+                  <label for="email">Váš e-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="vas@email.cz"
+                  />
+                </div>
+
+                <div class="intake-foot">
+                  <label class="intake-consent">
+                    <input type="checkbox" id="consent" name="consent" required />
+                    <span class="intake-check" aria-hidden="true"></span>
+                    <span class="intake-consent-text">
+                      Souhlasím se zpracováním údajů pro účely vyšetření
+                      <em>(ukázkový text GDPR)</em>.
+                    </span>
+                  </label>
+                  <div class="intake-actions">
+                    <button class="btn btn-primary" type="submit">Odeslat dotazník</button>
+                    <span class="intake-hint">Odpovědi uvidí tým před příchodem.</span>
+                  </div>
+                </div>
+              </form>
+
+              <div class="intake-success" id="qSuccess" hidden>
+                <span class="intake-success-mark" aria-hidden="true">OK</span>
+                <h2>Dotazník uložen (ukázka)</h2>
+                <p>V ostré verzi by odpovědi viděl tým před příchodem pacienta.</p>
+              </div>
+            </div>
+
+            <aside class="intake-rail" aria-label="Stav dotazníku">
+              <div class="intake-rail-orb" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <i></i>
+              </div>
+              <div class="svc-console-panel intake-rail-card">
+                <div class="svc-console-panel-head">
+                  <span class="svc-console-chip">Tx</span>
+                  <div>
+                    <h2>Proč to vyplnit</h2>
+                  </div>
+                </div>
+                <p>Stručné odpovědi stačí. Lékař je má připravené ještě před příchodem.</p>
+                <ul class="svc-console-checks">
+                  <li>Méně telefonování</li>
+                  <li>Rychlejší recepce</li>
+                  <li>Přesnější vyšetření</li>
+                </ul>
+              </div>
+              <div class="svc-console-panel intake-rail-card intake-rail-card--soft">
+                <div class="svc-console-panel-head">
+                  <span class="svc-console-chip">Rq</span>
+                  <div>
+                    <h2>Ještě nemáte termín?</h2>
+                  </div>
+                </div>
+                <p>Dotazník obvykle posíláme až po potvrzení žádosti sestrou.</p>
+                <a class="btn btn-outline" href="/design-3/zadost/zadost.html">Žádost o termín</a>
+              </div>
+              <p class="intake-rail-meta" aria-hidden="true">
+                <span class="intake-rail-pulse"></span>
+                kanál aktivní · secure demo
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Opal Vettet · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script>
+      (function () {
+        var form = document.getElementById("questionnaireForm");
+        var success = document.getElementById("qSuccess");
+        var bars = document.querySelectorAll(".intake-progress span");
+        var fields = form.querySelectorAll("textarea[data-step]");
+
+        function syncProgress() {
+          var max = -1;
+          fields.forEach(function (el) {
+            if (el.value.trim()) max = Math.max(max, Number(el.dataset.step));
+            if (document.activeElement === el) max = Math.max(max, Number(el.dataset.step));
+          });
+          bars.forEach(function (bar, i) {
+            bar.classList.toggle("is-on", i <= Math.max(max, 0));
+          });
+        }
+
+        fields.forEach(function (el) {
+          el.addEventListener("focus", syncProgress);
+          el.addEventListener("input", syncProgress);
+          el.addEventListener("blur", syncProgress);
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+          form.hidden = true;
+          success.hidden = false;
+          success.classList.add("is-visible");
+        });
+      })();
+    </script>
+  <script src="../../protect.js" defer></script></body>
+</html>

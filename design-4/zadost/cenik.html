@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ceník — VITAE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/design-4/theme.css" />
+  </head>
+  <body class="page-pricing">
+    <header class="vt-header" id="header">
+      <div class="container">
+        <a class="vt-brand" href="/design-4/zadost/index.html">
+          <b>VITAE</b>
+          <span>Veterinary Clinic</span>
+        </a>
+        <nav class="vt-nav" id="nav">
+          <a href="/design-4/zadost/index.html">Domů</a>
+          <a href="/design-4/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-4/zadost/tym.html">Tým</a>
+          <a href="/design-4/zadost/cenik.html" class="is-current">Ceník</a>
+          <a href="/design-4/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-4/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a href="/design-4/zadost/galerie.html">Galerie</a>
+          <a href="/design-4/zadost/recenze.html">Recenze</a>
+          <a href="/design-4/zadost/kontakt.html">Kontakt</a>
+        </nav>
+        <a class="vt-cta" href="/design-4/zadost/zadost.html">Rezervovat návštěvu</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media" style="background-image: url('https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=1100&q=80')"></div>
+        <div class="container">
+          <div class="hero-copy reveal">
+            <span class="kicker">Ceník</span>
+            <h1 class="display">Ceník</h1>
+            <p class="subhead">Průhledná péče bez překvapení</p>
+            <p class="lead">Věříme v jasné a férové ceny. Uvedené částky jsou orientační a mohou se lišit podle rozsahu vyšetření a individuálních potřeb vašeho zvířete.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="price-grid">
+            <div class="reveal" data-tabs>
+              <div class="seg">
+                <button type="button" class="is-active" data-tab="dog">Psi</button>
+                <button type="button" data-tab="cat">Kočky</button>
+              </div>
+              <div data-panel="dog">
+              <div class="rate-card">
+                <h3>Preventivní péče</h3>
+                <div class="rate-row"><span>Klinické vyšetření</span><span>800 – 1 200 Kč</span></div>
+                <div class="rate-row"><span>Očkování (vzteklina)</span><span>600 – 950 Kč</span></div>
+                <div class="rate-row"><span>Očkování (kombinované)</span><span>900 – 1 200 Kč</span></div>
+                <div class="rate-row"><span>Aplikace čipu</span><span>800 Kč</span></div>
+              </div>
+              <div class="rate-card">
+                <h3>Diagnostika</h3>
+                <div class="rate-row"><span>Krevní test (základní)</span><span>900 – 1 500 Kč</span></div>
+                <div class="rate-row"><span>Krevní test (rozšířený)</span><span>1 600 – 3 000 Kč</span></div>
+                <div class="rate-row"><span>Ultrazvuk</span><span>1 000 – 1 800 Kč</span></div>
+                <div class="rate-row"><span>RTG snímek</span><span>900 – 1 500 Kč</span></div>
+              </div>
+              <div class="rate-card">
+                <h3>Dentální péče</h3>
+                <div class="rate-row"><span>Dentální vyšetření</span><span>800 Kč</span></div>
+                <div class="rate-row"><span>Čištění zubů (ultrazvuk)</span><span>2 500 – 4 000 Kč</span></div>
+                <div class="rate-row"><span>Dentální RTG</span><span>1 200 Kč</span></div>
+              </div>
+              <div class="rate-card">
+                <h3>Chirurgie</h3>
+                <div class="rate-row"><span>Kastrace (fena)</span><span>4 000 – 6 000 Kč</span></div>
+                <div class="rate-row"><span>Kastrace (pes)</span><span>2 500 – 4 000 Kč</span></div>
+                <div class="rate-row"><span>Chirurgie měkkých tkání</span><span>od 3 000 Kč</span></div>
+              </div>
+              </div>
+              <div data-panel="cat" hidden>
+              <div class="rate-card">
+                <h3>Preventivní péče</h3>
+                <div class="rate-row"><span>Klinické vyšetření</span><span>700 – 1 100 Kč</span></div>
+                <div class="rate-row"><span>Očkování (vzteklina)</span><span>550 – 900 Kč</span></div>
+                <div class="rate-row"><span>Očkování (kombinované)</span><span>850 – 1 150 Kč</span></div>
+                <div class="rate-row"><span>Aplikace čipu</span><span>800 Kč</span></div>
+              </div>
+              <div class="rate-card">
+                <h3>Diagnostika</h3>
+                <div class="rate-row"><span>Krevní test (základní)</span><span>850 – 1 400 Kč</span></div>
+                <div class="rate-row"><span>Krevní test (rozšířený)</span><span>1 500 – 2 800 Kč</span></div>
+                <div class="rate-row"><span>Ultrazvuk</span><span>900 – 1 600 Kč</span></div>
+                <div class="rate-row"><span>RTG snímek</span><span>850 – 1 400 Kč</span></div>
+              </div>
+              <div class="rate-card">
+                <h3>Dentální péče</h3>
+                <div class="rate-row"><span>Dentální vyšetření</span><span>700 Kč</span></div>
+                <div class="rate-row"><span>Čištění zubů (ultrazvuk)</span><span>2 300 – 3 600 Kč</span></div>
+                <div class="rate-row"><span>Dentální RTG</span><span>1 100 Kč</span></div>
+              </div>
+              <div class="rate-card">
+                <h3>Chirurgie</h3>
+                <div class="rate-row"><span>Kastrace (kočka)</span><span>2 500 – 3 500 Kč</span></div>
+                <div class="rate-row"><span>Kastrace (kocour)</span><span>1 500 – 2 200 Kč</span></div>
+                <div class="rate-row"><span>Chirurgie měkkých tkání</span><span>od 2 800 Kč</span></div>
+              </div>
+              </div>
+              <p class="price-note">
+                Uvedené ceny jsou orientační. Konečná cena se může lišit podle rozsahu péče a bude vždy potvrzena po vyšetření a konzultaci.
+              </p>
+            </div>
+
+            <aside class="price-aside">
+              <div class="price-aside-inner reveal">
+                <div class="shot shot--tall">
+                  <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=900&q=80" alt="Pes v ordinaci" />
+                </div>
+                <h3>Nejste si jistí, co vaše zvíře potřebuje?</h3>
+                <p>Rádi vám pomůžeme vybrat správnou péči.</p>
+                <a class="btn btn--peach" href="/design-4/zadost/kontakt.html">Kontaktovat nás</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>VITAE</span>
+        <span>VITAE Veterinary Clinic · web + žádost o termín</span>
+      </div>
+    </footer>
+
+    <script src="/shared/site.js"></script>
+    <script src="/design-4/vitae.js"></script>
+  <script src="../../protect.js" defer></script></body>
+</html>

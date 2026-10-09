@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Objednat návštěvu — VITAE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/design-4/theme.css" />
+  </head>
+  <body class="page-booking">
+    <header class="vt-header" id="header">
+      <div class="container">
+        <a class="vt-brand" href="/design-4/zadost/index.html">
+          <b>VITAE</b>
+          <span>Veterinary Clinic</span>
+        </a>
+        <nav class="vt-nav" id="nav">
+          <a href="/design-4/zadost/index.html">Domů</a>
+          <a href="/design-4/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-4/zadost/tym.html">Tým</a>
+          <a href="/design-4/zadost/cenik.html">Ceník</a>
+          <a href="/design-4/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-4/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a href="/design-4/zadost/galerie.html">Galerie</a>
+          <a href="/design-4/zadost/recenze.html">Recenze</a>
+          <a href="/design-4/zadost/kontakt.html">Kontakt</a>
+        </nav>
+        <a class="vt-cta" href="/design-4/zadost/zadost.html">Rezervovat návštěvu</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media" style="background-image: url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1100&q=80')"></div>
+        <div class="container">
+          <div class="hero-copy reveal">
+            <span class="kicker">Objednání</span>
+            <h1 class="display">Objednat návštěvu</h1>
+            <p class="subhead">O zbytek se postaráme</p>
+            <p class="lead">Vyberte si termín, který vám vyhovuje, a napište, s čím můžeme pomoci. Termín potvrdíme co nejdříve — sloty si nevybíráte sami.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="book-grid">
+            <div class="form-card reveal" data-tabs>
+              <div class="form-tabs">
+                <button type="button" class="is-active" data-tab="form">Žádost o termín</button>
+                <button type="button" data-tab="call">Zavolat na recepci</button>
+              </div>
+
+              <div class="form-body" data-panel="form">
+                <form id="requestForm" novalidate>
+                  <fieldset class="field">
+                    <legend>Druh zvířete</legend>
+                    <div class="pet-pick">
+                      <label><input type="radio" name="petType" value="pes" required /> Pes</label>
+                      <label><input type="radio" name="petType" value="kocka" /> Kočka</label>
+                    </div>
+                  </fieldset>
+
+                  <div class="field">
+                    <label for="reason">Důvod návštěvy</label>
+                    <select id="reason" name="reason" required>
+                      <option value="">Vyberte důvod…</option>
+                      <option>Preventivní prohlídka</option>
+                      <option>Očkování</option>
+                      <option>Dentální péče</option>
+                      <option>Chirurgie / kastrace</option>
+                      <option>Kožní problém</option>
+                      <option>Kontrola po zákroku</option>
+                      <option>Jiné</option>
+                    </select>
+                  </div>
+
+                  <div class="field-row">
+                    <div class="field">
+                      <label for="prefDate">Preferované datum</label>
+                      <input id="prefDate" name="prefDate" type="date" required />
+                    </div>
+                    <div class="field">
+                      <label for="prefTime">Preferovaný čas</label>
+                      <select id="prefTime" name="prefTime" required>
+                        <option value="">Vyberte čas…</option>
+                        <option>Dopoledne 8:00–12:00</option>
+                        <option>Odpoledne 12:00–16:00</option>
+                        <option>Podvečer 16:00–18:00</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="ownerName">Vaše jméno</label>
+                    <input id="ownerName" name="ownerName" type="text" required autocomplete="name" />
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="+420 …" />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" required autocomplete="email" placeholder="vas@email.cz" />
+                  </div>
+
+                  <div class="field">
+                    <label for="note">Doplňující informace (nepovinné)</label>
+                    <textarea id="note" name="note" rows="3" placeholder="Např. příznaky, předchozí léčba…"></textarea>
+                  </div>
+
+                  <label class="consent">
+                    <input type="checkbox" name="consent" required />
+                    <span>Souhlasím se zpracováním osobních údajů <em>(ukázkový text GDPR)</em>.</span>
+                  </label>
+
+                  <button class="btn btn--peach" type="submit">Požádat o termín</button>
+                  <p class="hint">
+                    U akutních stavů formulář nepoužívejte — volejte ihned na
+                    <a href="tel:+420123456789">+420 123 456 789</a>.
+                  </p>
+                </form>
+
+                <div class="form-success" id="requestSuccess">
+                  <h2>Žádost odeslána</h2>
+                  <p id="successDetail"></p>
+                  <p class="hint">
+                    Po potvrzení může přijít odkaz na
+                    <a href="/design-4/zadost/dotaznik.html">přednávštěvní dotazník</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-body" data-panel="call" hidden>
+                <h2 style="color: var(--wine); font-size: 1.7rem">Zavolejte nám</h2>
+                <p style="color: var(--ink-soft)">
+                  Nechcete vyplňovat formulář? Zavolejte přímo na recepci —
+                  termín domluvíme hned při hovoru.
+                </p>
+                <p class="actions"><a class="btn btn--peach" href="tel:+420123456789">+420 123 456 789</a></p>
+                <p class="hint">Po–Pá 8:00–18:00 · So 9:00–12:00</p>
+              </div>
+            </div>
+
+            <aside class="book-aside reveal">
+              <ul class="perk-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.4" y="5.2" width="17.2" height="15.4" rx="2.4"/><path d="M3.4 10h17.2M8.4 3.4v3.4M15.6 3.4v3.4"/></svg><span>Rychlé a jednoduché odeslání žádosti</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.2"/><path d="M12 7.4V12l3.1 2"/></svg><span>Flexibilní termíny</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8.6" r="3.2"/><path d="M3.6 19.4a5.4 5.4 0 0 1 10.8 0"/><path d="M16 5.8a3.2 3.2 0 0 1 0 6"/><path d="M17.4 14.6a5.4 5.4 0 0 1 3 4.8"/></svg><span>Individuální přístup ke každému pacientovi</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="5.4" width="17.6" height="13.2" rx="2.4"/><path d="m4.2 7.2 7.8 5.6 7.8-5.6"/></svg><span>Termín vám vždy potvrdíme</span></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>VITAE</span>
+        <span>VITAE Veterinary Clinic · web + žádost o termín</span>
+      </div>
+    </footer>
+
+    <script src="/shared/site.js"></script>
+    <script src="/design-4/vitae.js"></script>
+  <script src="../../protect.js" defer></script></body>
+</html>

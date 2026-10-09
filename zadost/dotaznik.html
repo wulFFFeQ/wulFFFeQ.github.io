@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Přednávštěvní dotazník — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/theme.css" />
+  </head>
+  <body>
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/zadost/sluzby/index.html">Služby</a>
+          <a href="/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/zadost/cenik.html">Ceník</a>
+          <a href="/zadost/tym.html">Tým</a>
+          <a href="/zadost/galerie.html">Galerie</a>
+          <a href="/zadost/recenze.html">Recenze</a>
+          <a href="/zadost/zadost.html">Žádost o termín</a>
+          <a href="/zadost/dotaznik.html" aria-current="page">Dotazník</a>
+          <a href="/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a href="/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero page-hero--quest">
+        <div class="container">
+          <span class="section-label">Před návštěvou</span>
+          <h1>Krátký dotazník</h1>
+          <p>
+            Po potvrzení termínu pošle sestra odkaz na tuto stránku — místo
+            dlouhého telefonátu.
+          </p>
+        </div>
+      </header>
+
+      <section class="section quest-section">
+        <div class="container quest-stage">
+          <aside class="price-ornament price-ornament--left quest-ornament" aria-hidden="true">
+            <svg class="price-ornament-vine" viewBox="0 0 96 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="orn-stem" d="M48 28c0 42-18 70-18 118s20 78 18 128-16 82-16 132 14 86 16 126" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+              <path class="orn-leaf" d="M30 96c-18-4-28-22-22-36 14 4 28 14 22 36Z" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.08)"/>
+              <path class="orn-leaf" d="M66 168c16-6 28-20 22-36-16 6-28 18-22 36Z" stroke="currentColor" stroke-width="1" fill="rgba(27,92,76,0.06)"/>
+              <path class="orn-leaf" d="M28 274c-20-2-32-20-26-36 16 2 30 16 26 36Z" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.08)"/>
+              <path class="orn-leaf" d="M68 358c18-8 28-24 20-38-16 8-28 22-20 38Z" stroke="currentColor" stroke-width="1" fill="rgba(27,92,76,0.06)"/>
+              <path class="orn-leaf" d="M30 456c-18-4-28-20-22-34 14 4 26 14 22 34Z" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.08)"/>
+              <g class="orn-diamond" transform="translate(48 52)"><rect x="-4.5" y="-4.5" width="9" height="9" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="none"/></g>
+              <g class="orn-diamond" transform="translate(48 214)"><rect x="-3.5" y="-3.5" width="7" height="7" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.2)"/></g>
+              <g class="orn-diamond" transform="translate(48 398)"><rect x="-4.5" y="-4.5" width="9" height="9" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="none"/></g>
+              <g class="orn-diamond" transform="translate(48 520)"><rect x="-3" y="-3" width="6" height="6" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="rgba(27,92,76,0.15)"/></g>
+            </svg>
+            <span class="price-ornament-mote" style="--mx:12%; --my:18%"></span>
+            <span class="price-ornament-mote" style="--mx:68%; --my:42%"></span>
+            <span class="price-ornament-mote" style="--mx:28%; --my:72%"></span>
+          </aside>
+
+          <form class="quest-talk reveal" id="questionnaireForm">
+            <div class="quest-ask">
+              <p class="quest-prompt">Bere zvíře nějaké léky?</p>
+              <label class="visually-hidden" for="meds">Aktuální léky</label>
+              <textarea
+                id="meds"
+                name="meds"
+                placeholder="Názvy, dávkování — nebo napište „žádné“"
+              ></textarea>
+            </div>
+
+            <div class="quest-ask">
+              <p class="quest-prompt">Má známé alergie?</p>
+              <label class="visually-hidden" for="allergies">Alergie</label>
+              <textarea
+                id="allergies"
+                name="allergies"
+                placeholder="Léky, krmivo, jiné…"
+              ></textarea>
+            </div>
+
+            <div class="quest-ask">
+              <p class="quest-prompt">Jak se příznaky vyvíjejí?</p>
+              <label class="visually-hidden" for="symptoms">Vývoj příznaků</label>
+              <textarea
+                id="symptoms"
+                name="symptoms"
+                placeholder="Od kdy, co se zhoršilo nebo zlepšilo"
+              ></textarea>
+            </div>
+
+            <div class="quest-ask">
+              <p class="quest-prompt">Jaký je váš e-mail?</p>
+              <label class="visually-hidden" for="email">Váš e-mail</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="vas@email.cz"
+              />
+            </div>
+
+            <div class="quest-foot">
+              <label class="check-line">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span
+                  >Souhlasím se zpracováním údajů pro účely vyšetření
+                  (ukázkový text GDPR).</span
+                >
+              </label>
+              <button class="btn btn-primary" type="submit">Odeslat odpovědi</button>
+            </div>
+          </form>
+
+          <div class="form-success" id="qSuccess">
+            <h3>Dotazník uložen (ukázka)</h3>
+            <p>V ostré verzi by odpovědi viděl tým před příchodem pacienta.</p>
+          </div>
+
+          <aside class="price-ornament price-ornament--right quest-ornament" aria-hidden="true">
+            <svg class="price-ornament-vine" viewBox="0 0 96 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="orn-stem" d="M48 28c0 42-18 70-18 118s20 78 18 128-16 82-16 132 14 86 16 126" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+              <path class="orn-leaf" d="M30 96c-18-4-28-22-22-36 14 4 28 14 22 36Z" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.08)"/>
+              <path class="orn-leaf" d="M66 168c16-6 28-20 22-36-16 6-28 18-22 36Z" stroke="currentColor" stroke-width="1" fill="rgba(27,92,76,0.06)"/>
+              <path class="orn-leaf" d="M28 274c-20-2-32-20-26-36 16 2 30 16 26 36Z" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.08)"/>
+              <path class="orn-leaf" d="M68 358c18-8 28-24 20-38-16 8-28 22-20 38Z" stroke="currentColor" stroke-width="1" fill="rgba(27,92,76,0.06)"/>
+              <path class="orn-leaf" d="M30 456c-18-4-28-20-22-34 14 4 26 14 22 34Z" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.08)"/>
+              <g class="orn-diamond" transform="translate(48 52)"><rect x="-4.5" y="-4.5" width="9" height="9" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="none"/></g>
+              <g class="orn-diamond" transform="translate(48 214)"><rect x="-3.5" y="-3.5" width="7" height="7" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="rgba(154,123,79,0.2)"/></g>
+              <g class="orn-diamond" transform="translate(48 398)"><rect x="-4.5" y="-4.5" width="9" height="9" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="none"/></g>
+              <g class="orn-diamond" transform="translate(48 520)"><rect x="-3" y="-3" width="6" height="6" transform="rotate(45)" stroke="currentColor" stroke-width="1" fill="rgba(27,92,76,0.15)"/></g>
+            </svg>
+            <span class="price-ornament-mote" style="--mx:40%; --my:22%"></span>
+            <span class="price-ornament-mote" style="--mx:18%; --my:55%"></span>
+            <span class="price-ornament-mote" style="--mx:62%; --my:78%"></span>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Varianta 2 · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script>
+      document.getElementById("questionnaireForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!this.checkValidity()) {
+          this.reportValidity();
+          return;
+        }
+        this.hidden = true;
+        document.getElementById("qSuccess").classList.add("is-visible");
+      });
+    </script>
+  <script src="../protect.js" defer></script></body>
+</html>

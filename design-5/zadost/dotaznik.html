@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Přednávštěvní dotazník — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-5/theme.css" />
+  </head>
+  <body>
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/design-5/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-5/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-5/zadost/cenik.html">Ceník</a>
+          <a href="/design-5/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-5/zadost/tym.html">Tým</a>
+          <a href="/design-5/zadost/galerie.html">Galerie</a>
+          <a href="/design-5/zadost/recenze.html">Recenze</a>
+          <a href="/design-5/zadost/dotaznik.html">Dotazník</a>
+          <a href="/design-5/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta" href="/design-5/zadost/zadost.html">Žádost o termín</a>
+          <a href="/design-5/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--page section--intake">
+        <div class="container">
+          <header class="page-intro">
+            <span class="section-label">Před návštěvou</span>
+            <h1>Krátký dotazník</h1>
+            <p>
+            Po potvrzení termínu pošle sestra odkaz sem — lékař je připraven
+            dřív, než vstoupíte do ordinace.
+            </p>
+          </header>
+          <div class="intake" id="qLayout">
+            <div class="intake-main">
+              <form class="intake-form" id="questionnaireForm">
+                <div class="intake-form-intro">
+                  <p class="service-guide-kicker">Vyplnění</p>
+                  <h2>Co potřebujeme vědět</h2>
+                  <p>Stručné odpovědi stačí. V ukázce se nic neodesílá.</p>
+                </div>
+
+                <fieldset class="intake-block">
+                  <legend><span>01</span> Anamnéza</legend>
+                  <div class="field">
+                    <label for="meds">Aktuální léky</label>
+                    <textarea
+                      id="meds"
+                      name="meds"
+                      rows="3"
+                      placeholder="Názvy léků a dávkování, nebo „žádné“"
+                    ></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="allergies">Alergie</label>
+                    <textarea
+                      id="allergies"
+                      name="allergies"
+                      rows="2"
+                      placeholder="Léky, krmivo, jiné…"
+                    ></textarea>
+                  </div>
+                </fieldset>
+
+                <fieldset class="intake-block">
+                  <legend><span>02</span> Průběh</legend>
+                  <div class="field">
+                    <label for="symptoms">Vývoj příznaků</label>
+                    <textarea
+                      id="symptoms"
+                      name="symptoms"
+                      rows="3"
+                      placeholder="Od kdy, co se zhoršilo nebo zlepšilo"
+                    ></textarea>
+                  </div>
+                </fieldset>
+
+                <fieldset class="intake-block">
+                  <legend><span>03</span> Kontakt</legend>
+                  <div class="field">
+                    <label for="email">Váš e-mail</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      autocomplete="email"
+                      placeholder="vas@email.cz"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="intake-block">
+                  <legend><span>04</span> Souhlas</legend>
+                  <div class="field">
+                    <label class="consent-row" for="consent">
+                      <input type="checkbox" id="consent" name="consent" required />
+                      <span>
+                        Souhlasím se zpracováním údajů pro účely vyšetření
+                        (ukázkový text GDPR).
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="intake-form-actions">
+                  <p class="note">Odpovědi v ukázce nikam neodesíláme.</p>
+                  <button class="btn btn-primary" type="submit">Odeslat dotazník</button>
+                </div>
+              </form>
+            </div>
+
+            <aside class="intake-aside">
+              <p class="service-guide-kicker">Proč to vyplnit</p>
+              <ol class="service-steps">
+                <li>
+                  <span class="num">01</span>
+                  <div>
+                    <strong>Léky a alergie</strong>
+                    <p>Lékař vidí rizika před vyšetřením.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="num">02</span>
+                  <div>
+                    <strong>Průběh příznaků</strong>
+                    <p>Od kdy a co se změnilo — bez dlouhého telefonátu.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="num">03</span>
+                  <div>
+                    <strong>Klidnější příjem</strong>
+                    <p>Tým má kontext, než otevřete dveře ordinace.</p>
+                  </div>
+                </li>
+              </ol>
+
+              <div class="intake-meta">
+                <span class="intake-meta-label">Doba vyplnění</span>
+                <strong class="intake-meta-value">2–3 minuty</strong>
+                <p>Odkaz přijde od sestry po potvrzení termínu.</p>
+              </div>
+            </aside>
+          </div>
+
+          <div class="form-success intake-success" id="qSuccess">
+            <p class="service-guide-kicker">Hotovo</p>
+            <h3>Dotazník odeslán</h3>
+            <p>V ostré verzi by odpovědi viděl tým před příchodem pacienta.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Design 5 · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script>
+      document
+        .getElementById("questionnaireForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (!this.checkValidity()) {
+            this.reportValidity();
+            return;
+          }
+          var layout = document.getElementById("qLayout");
+          if (layout) layout.hidden = true;
+          document.getElementById("qSuccess").classList.add("is-visible");
+        });
+    </script>
+  <script src="../../protect.js" defer></script></body>
+</html>

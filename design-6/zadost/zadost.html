@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Objednat termín — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-6/theme.css" />
+  </head>
+  <body class="page-book">
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/design-6/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-6/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-6/zadost/cenik.html">Ceník</a>
+          <a href="/design-6/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-6/zadost/tym.html">Tým</a>
+          <a href="/design-6/zadost/galerie.html">Galerie</a>
+          <a href="/design-6/zadost/recenze.html">Recenze</a>
+          <a href="/design-6/zadost/dotaznik.html">Dotazník</a>
+          <a href="/design-6/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta is-current" href="/design-6/zadost/zadost.html" aria-current="page">Objednat termín</a>
+          <a href="/design-6/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="book">
+        <div class="container book-grid" id="requestLayout">
+          <div class="book-main">
+          <div class="book-head reveal">
+            <h1>
+              <span>Objednat</span>
+              <span>termín</span>
+            </h1>
+            <p>Rychle, snadno, online</p>
+          </div>
+
+          <div class="book-card reveal">
+            <ol class="book-steps" aria-label="Kroky objednávky">
+              <li class="book-step is-active" data-step-indicator="1">
+                <b>1</b><span>Osobní údaje</span>
+              </li>
+              <li class="book-step" data-step-indicator="2">
+                <b>2</b><span>Volba služby</span>
+              </li>
+              <li class="book-step" data-step-indicator="3">
+                <b>3</b><span>Termín</span>
+              </li>
+            </ol>
+
+            <form class="book-form" id="requestForm" novalidate>
+              <!-- STEP 1: Osobní údaje -->
+              <div class="book-panel" data-book-step="1">
+                <div class="field">
+                  <label for="ownerName">Vaše jméno</label>
+                  <input
+                    id="ownerName"
+                    name="ownerName"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Jméno a příjmení"
+                  />
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="phone">Telefon</label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      required
+                      placeholder="+420 …"
+                      autocomplete="tel"
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="vas@email.cz"
+                      autocomplete="email"
+                    />
+                  </div>
+                </div>
+
+                <fieldset class="field contact-pref">
+                  <legend>Jak vám máme potvrdit termín?</legend>
+                  <div class="radio-row" role="group" aria-label="Preferovaný kontakt">
+                    <label class="radio-pill">
+                      <input type="checkbox" name="contactPref" id="prefSms" value="sms" />
+                      <span>SMS</span>
+                    </label>
+                    <label class="radio-pill">
+                      <input type="checkbox" name="contactPref" id="prefEmail" value="email" />
+                      <span>E-mail</span>
+                    </label>
+                  </div>
+                  <p class="field-hint">Zvolte SMS, e-mail, nebo obojí.</p>
+                </fieldset>
+
+                <div class="field field--consent">
+                  <label class="consent-row" for="consent">
+                    <input type="checkbox" id="consent" name="consent" required />
+                    <span>
+                      Souhlasím se zpracováním uvedených údajů pro vyřízení objednávky
+                      (ukázkový text GDPR).
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 2: Volba služby -->
+              <div class="book-panel" data-book-step="2" hidden>
+                <div class="field">
+                  <label id="petTypeLabel">Druh mazlíčka</label>
+                  <div class="radio-row" role="group" aria-labelledby="petTypeLabel">
+                    <label class="radio-pill">
+                      <input type="radio" name="petType" id="petType" value="pes" checked />
+                      <span>Pes</span>
+                    </label>
+                    <label class="radio-pill">
+                      <input type="radio" name="petType" value="kocka" />
+                      <span>Kočka</span>
+                    </label>
+                    <label class="radio-pill">
+                      <input type="radio" name="petType" value="jine" />
+                      <span>Jiné</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="visitType">Typ návštěvy</label>
+                    <div class="book-select" data-book-select>
+                      <button
+                        type="button"
+                        class="book-select-trigger"
+                        id="visitTypeTrigger"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-controls="visitTypeList"
+                      >
+                        <span data-book-select-label>Preventivní prohlídka</span>
+                      </button>
+                      <ul
+                        class="book-select-menu"
+                        id="visitTypeList"
+                        role="listbox"
+                        aria-labelledby="visitTypeTrigger"
+                        hidden
+                      >
+                        <li role="option" data-value="prevence" aria-selected="true">Preventivní prohlídka</li>
+                        <li role="option" data-value="ockovani">Očkování</li>
+                        <li role="option" data-value="kastrace">Kastrace</li>
+                        <li role="option" data-value="zuby">Dentální ošetření</li>
+                        <li role="option" data-value="cipovani">Čipování</li>
+                        <li role="option" data-value="jine">Jiný důvod</li>
+                      </ul>
+                      <select id="visitType" name="visitType" class="book-select-native" tabindex="-1" aria-hidden="true">
+                        <option value="prevence" selected>Preventivní prohlídka</option>
+                        <option value="ockovani">Očkování</option>
+                        <option value="kastrace">Kastrace</option>
+                        <option value="zuby">Dentální ošetření</option>
+                        <option value="cipovani">Čipování</option>
+                        <option value="jine">Jiný důvod</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="petAge">Věk mazlíčka</label>
+                    <input id="petAge" name="petAge" type="text" required placeholder="např. 3 roky" />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label id="urgencyLabel">Naléhavost</label>
+                  <div class="radio-row" id="urgencyGroup" role="group" aria-labelledby="urgencyLabel">
+                    <label class="radio-pill">
+                      <input type="radio" name="urgency" value="routine" checked />
+                      <span>Běžné</span>
+                    </label>
+                    <label class="radio-pill">
+                      <input type="radio" name="urgency" value="week" />
+                      <span>Tento týden</span>
+                    </label>
+                    <label class="radio-pill">
+                      <input type="radio" name="urgency" value="acute" />
+                      <span>Akutně dnes</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div id="acuteBlock" class="alert alert-urgent" hidden>
+                  <h3>Akutní stav — volejte teď</h3>
+                  <p>
+                    Termín formulářem neobjednáváme. Zavolejte
+                    <a href="tel:+420777000000"><strong>+420 777 000 000</strong></a>. Mimo
+                    ordinační hodiny viz
+                    <a href="/design-6/zadost/pohotovost.html">pohotovost</a>.
+                  </p>
+                </div>
+
+                <div id="scheduleFields">
+                  <div class="field">
+                    <label for="reason">Důvod návštěvy</label>
+                    <textarea
+                      id="reason"
+                      name="reason"
+                      rows="2"
+                      required
+                      placeholder="Stručně popište, co vašeho mazlíčka přivádí"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 3: Termín -->
+              <div class="book-panel book-panel--term" data-book-step="3" hidden>
+                <div class="field-row">
+                  <div class="field book-field-date">
+                    <label for="pref1">Preferovaný termín</label>
+                    <input id="pref1" name="pref1" type="text" placeholder="např. úterý dopoledne" />
+                  </div>
+                  <div class="field book-field-date">
+                    <label for="pref2">Náhradní termín</label>
+                    <input id="pref2" name="pref2" type="text" placeholder="např. čtvrtek odpoledne" />
+                  </div>
+                </div>
+
+                <div class="book-actions">
+                  <p class="note">Ukázka — data se nikam neodesílají.</p>
+                  <button class="btn btn-primary" type="submit">Objednat termín →</button>
+                </div>
+              </div>
+
+              <div class="book-nav">
+                <button class="btn btn-ghost" type="button" id="bookPrev" hidden>← Zpět</button>
+                <button class="btn btn-primary" type="button" id="bookNext">Pokračovat →</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="book-success-wrap" hidden>
+            <div class="form-success book-success" id="requestSuccess">
+              <h3>Žádost přijata</h3>
+              <p id="successDetail">
+                V ostré verzi by žádost dorazila sestře. Ta ji zapíše do systému a ozve se vám
+                SMS.
+              </p>
+              <p>
+                <a class="btn btn-outline" href="/design-6/zadost/dotaznik.html"
+                  >Přednávštěvní dotazník</a
+                >
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <aside class="book-aside reveal">
+            <figure class="book-photo">
+              <div class="floral-layer" aria-hidden="true">
+                <span class="floral floral--tr floral--sm"></span>
+                <span class="floral floral--br floral--petals floral--sm"></span>
+              </div>
+              <div class="book-photo-frame">
+                <img
+                  src="/shared/images/home-story-2.jpg"
+                  alt="Kočka v klidném prostředí veterinární kliniky"
+                  loading="lazy"
+                  width="960"
+                  height="1200"
+                />
+              </div>
+            </figure>
+            <p class="book-script"><span class="script">Těšíme se na vás</span></p>
+            <div class="book-urgent">
+              <span>Akutní stav</span>
+              <a href="tel:+420777000000">+420 777 000 000</a>
+              <p>Formulář nepoužívejte — volejte hned.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Praha</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script src="zadost.js"></script>
+  <script src="../../protect.js" defer></script></body>
+</html>

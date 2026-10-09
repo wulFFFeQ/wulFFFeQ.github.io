@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google recenze — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/theme.css" />
+  </head>
+  <body>
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/zadost/sluzby/index.html">Služby</a>
+          <a href="/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/zadost/cenik.html">Ceník</a>
+          <a href="/zadost/tym.html">Tým</a>
+          <a href="/zadost/galerie.html">Galerie</a>
+          <a href="/zadost/recenze.html" aria-current="page">Recenze</a>
+          <a href="/zadost/zadost.html">Žádost o termín</a>
+          <a href="/zadost/dotaznik.html">Dotazník</a>
+          <a href="/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a href="/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="section-label">Recenze</span>
+          <h1>QR kód na Google recenze</h1>
+          <p>
+            Vytiskněte a dejte na recepci — majitel naskenuje a ohodnotí kliniku
+            na Googlu.
+          </p>
+        </div>
+      </header>
+
+      <section class="section reviews-section">
+        <div class="container">
+          <div class="review-row reveal">
+            <figure class="review-qr">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&margin=12&color=182820&bgcolor=FFFFFF&data=https%3A%2F%2Fwww.google.com%2Fmaps"
+                width="200"
+                height="200"
+                alt="QR kód vedoucí na Google Maps"
+              />
+            </figure>
+            <div class="review-text">
+              <h2>Na recepci</h2>
+              <p>
+                Ukázkový QR vede na Google Maps. Na ostrém webu ho nahradíte
+                odkazem na Google Business profil kliniky — sestra ho může
+                klientovi ukázat i v telefonu.
+              </p>
+              <a
+                class="btn btn-outline"
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener"
+                >Otevřít Google Maps</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Varianta 2 · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+  <script src="../protect.js" defer></script></body>
+</html>

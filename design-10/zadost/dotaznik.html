@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Přednávštěvní dotazník — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-10/theme.css" />
+  </head>
+  <body>
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/design-10/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-10/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-10/zadost/cenik.html">Ceník</a>
+          <a href="/design-10/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-10/zadost/tym.html">Tým</a>
+          <a href="/design-10/zadost/galerie.html">Galerie</a>
+          <a href="/design-10/zadost/recenze.html">Recenze</a>
+          <a href="/design-10/zadost/dotaznik.html">Dotazník</a>
+          <a href="/design-10/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta" href="/design-10/zadost/zadost.html">Žádost o termín</a>
+          <a href="/design-10/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero">
+        <div class="container">
+          <span class="section-label">Před návštěvou</span>
+          <h1>Krátký dotazník</h1>
+          <p>
+            Po potvrzení termínu pošle sestra odkaz na tuto stránku — místo
+            dlouhého telefonátu.
+          </p>
+        </div>
+      </header>
+
+      <section class="section intake-section">
+        <div class="container reveal">
+          <div class="intake-board">
+            <div class="intake-main">
+              <div class="intake-banner" id="intakeBanner">
+                <strong>3 otázky + e-mail · asi 2 minuty</strong>
+                <span>Tým to má připravené ještě před příchodem.</span>
+              </div>
+
+              <form class="form-card intake-form" id="questionnaireForm">
+                <div class="intake-form-head">
+                  <h2>Zdravotní informace</h2>
+                  <p>Stačí stručně — přesnější údaje ušetří čas na recepci.</p>
+                  <div class="intake-progress" aria-hidden="true">
+                    <i class="is-on"></i>
+                    <i class="is-on"></i>
+                    <i class="is-on"></i>
+                    <i class="is-on"></i>
+                  </div>
+                </div>
+
+                <div class="field intake-field stagger-child" style="--stagger: 40ms">
+                  <div class="intake-field-head">
+                    <span class="intake-step">1</span>
+                    <div>
+                      <label for="meds">Aktuální léky</label>
+                      <p class="intake-hint">Názvy a dávkování — nebo napište „žádné“.</p>
+                    </div>
+                  </div>
+                  <textarea id="meds" name="meds" placeholder="např. Apoquel 16 mg 1× denně"></textarea>
+                </div>
+
+                <div class="field intake-field stagger-child" style="--stagger: 90ms">
+                  <div class="intake-field-head">
+                    <span class="intake-step">2</span>
+                    <div>
+                      <label for="allergies">Alergie</label>
+                      <p class="intake-hint">Léky, krmivo nebo jiné reakce, o kterých víte.</p>
+                    </div>
+                  </div>
+                  <textarea id="allergies" name="allergies" placeholder="např. penicilin, kuřecí bílkovina"></textarea>
+                </div>
+
+                <div class="field intake-field stagger-child" style="--stagger: 140ms">
+                  <div class="intake-field-head">
+                    <span class="intake-step">3</span>
+                    <div>
+                      <label for="symptoms">Vývoj příznaků</label>
+                      <p class="intake-hint">Od kdy to trvá a co se zhoršilo nebo zlepšilo.</p>
+                    </div>
+                  </div>
+                  <textarea id="symptoms" name="symptoms" placeholder="např. zvrací od úterý, dnes už méně pije"></textarea>
+                </div>
+
+                <div class="field intake-field stagger-child" style="--stagger: 190ms">
+                  <div class="intake-field-head">
+                    <span class="intake-step">4</span>
+                    <div>
+                      <label for="email">Váš e-mail</label>
+                      <p class="intake-hint">Na tento e-mail vám napíšeme zpět.</p>
+                    </div>
+                  </div>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="vas@email.cz"
+                  />
+                </div>
+
+                <div class="intake-foot">
+                  <label class="intake-consent">
+                    <input type="checkbox" id="consent" name="consent" required />
+                    <span>Souhlasím se zpracováním údajů pro účely vyšetření (ukázkový text GDPR).</span>
+                  </label>
+                  <div class="intake-actions">
+                    <button class="btn btn-primary" type="submit" data-magnetic>Odeslat dotazník</button>
+                    <p class="intake-note">Odpovědi vidí jen tým kliniky.</p>
+                  </div>
+                </div>
+              </form>
+
+              <div class="form-success intake-success" id="qSuccess">
+                <div class="intake-success-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                </div>
+                <h3>Dotazník uložen (ukázka)</h3>
+                <p>V ostré verzi by odpovědi viděl tým před příchodem pacienta.</p>
+              </div>
+            </div>
+
+            <aside class="request-aside intake-aside" aria-label="Tipy k dotazníku">
+              <span class="request-orb request-orb-a" aria-hidden="true"></span>
+              <span class="request-orb request-orb-b" aria-hidden="true"></span>
+              <div class="request-aside-card">
+                <p class="request-aside-label">Proč to vyplnit</p>
+                <h2>Lékař je připravený</h2>
+                <p>
+                  Stručné odpovědi stačí. Ušetříte čas na recepci a vyšetření může začít hned.
+                </p>
+              </div>
+              <div class="request-aside-card request-aside-card--soft">
+                <p class="request-aside-label">Ještě nemáte termín?</p>
+                <h2>Nejdřív žádost</h2>
+                <p>Dotazník obvykle posíláme až po potvrzení termínu sestrou.</p>
+                <a class="btn btn-outline" href="/design-10/zadost/zadost.html">Žádost o termín</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Design 10 · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script src="../enhance.js"></script>
+    <script>
+      document.getElementById("questionnaireForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!this.checkValidity()) {
+          this.reportValidity();
+          return;
+        }
+        this.hidden = true;
+        var banner = document.getElementById("intakeBanner");
+        if (banner) banner.hidden = true;
+        document.getElementById("qSuccess").classList.add("is-visible");
+      });
+    </script>
+  <script src="../../protect.js" defer></script></body>
+</html>

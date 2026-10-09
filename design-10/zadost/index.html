@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veterinární klinika — web + žádost o termín</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-10/theme.css" />
+  </head>
+  <body>
+    <header class="site-header" id="header">
+      <div class="container">
+        <a class="brand" href="/design-10/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-10/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-10/zadost/cenik.html">Ceník</a>
+          <a href="/design-10/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-10/zadost/tym.html">Tým</a>
+          <a href="/design-10/zadost/galerie.html">Galerie</a>
+          <a href="/design-10/zadost/recenze.html">Recenze</a>
+          <a href="/design-10/zadost/dotaznik.html">Dotazník</a>
+          <a href="/design-10/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta" href="/design-10/zadost/zadost.html">Žádost o termín</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="sticky-rail" data-sticky-rail aria-label="Rychlý kontakt" aria-hidden="true">
+      <div class="sticky-rail-meta">
+        <a href="tel:+420777000000">+420 777 000 000</a>
+        <span data-hours-hint>Ordinační doba</span>
+      </div>
+      <div class="sticky-rail-actions">
+        <a class="btn btn-ghost-ink" href="tel:+420777000000">Zavolat</a>
+        <a class="btn btn-primary" href="/design-10/zadost/zadost.html">Požádat o termín</a>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="hero-brand">Veterinární klinika</p>
+          <h1>Stejný web + žádost o termín</h1>
+          <p>
+            Vše z prezenční varianty a navíc formulář žádosti, kterou sestra
+            potvrdí SMS nebo e-mailem — bez výběru volných slotů majitelem.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/design-10/zadost/zadost.html">Požádat o termín</a>
+            <a class="btn btn-ghost" href="/design-10/zadost/pohotovost.html">Je to urgentní?</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome-bar">
+        <div class="container">
+          <div class="welcome-bar-grid">
+            <div>
+              <span>Žádost o termín</span>
+              <strong>Bez online slotů</strong>
+            </div>
+            <div>
+              <span>Potvrzení</span>
+              <strong>SMS / e-mail od sestry</strong>
+            </div>
+            <div>
+              <span>Zavolejte</span>
+              <strong><a href="tel:+420777000000">+420 777 000 000</a></strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section clinic-tour" id="prohlidka">
+        <div class="container reveal">
+          <span class="section-label">Prostory</span>
+          <h2 class="section-title">Prohlídka kliniky</h2>
+          <p class="section-lead">Čtyři místnosti, ať víte, co vás čeká — posouvejte nebo použijte šipky.</p>
+          <div class="tour-shell" data-clinic-tour>
+            <div class="tour-track" tabindex="0" aria-label="Prohlídka prostor kliniky">
+              <article class="tour-slide tour-waiting is-active">
+                <div class="tour-slide-body">
+                  <span>01</span>
+                  <h3>Čekárna</h3>
+                  <p>Klidný vstup, oddělené zóny pro psy a kočky, když to jde.</p>
+                </div>
+              </article>
+              <article class="tour-slide tour-desk">
+                <div class="tour-slide-body">
+                  <span>02</span>
+                  <h3>Recepce</h3>
+                  <p>První kontakt, registrace a domluva termínu bez zbytečného čekání.</p>
+                </div>
+              </article>
+              <article class="tour-slide tour-exam">
+                <div class="tour-slide-body">
+                  <span>03</span>
+                  <h3>Vyšetřovna</h3>
+                  <p>Moderní vybavení, přehledný prostor pro vyšetření i krátké zákroky.</p>
+                </div>
+              </article>
+              <article class="tour-slide tour-room">
+                <div class="tour-slide-body">
+                  <span>04</span>
+                  <h3>Prostor kliniky</h3>
+                  <p>Orientační chodby a zázemí — ať se u nás cítíte jistě.</p>
+                </div>
+              </article>
+            </div>
+            <div class="tour-controls">
+              <div class="tour-dots" role="tablist" aria-label="Místnosti">
+                <button type="button" class="tour-dot is-active" aria-label="Čekárna" aria-current="true"></button>
+                <button type="button" class="tour-dot" aria-label="Recepce"></button>
+                <button type="button" class="tour-dot" aria-label="Vyšetřovna"></button>
+                <button type="button" class="tour-dot" aria-label="Prostor kliniky"></button>
+              </div>
+              <div class="tour-nav">
+                <button type="button" data-tour-prev aria-label="Předchozí místnost">‹</button>
+                <button type="button" data-tour-next aria-label="Další místnost">›</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="triaz">
+        <div class="container reveal">
+          <span class="section-label">Orientace</span>
+          <h2 class="section-title">Je to urgentní?</h2>
+          <p class="section-lead">Vyberte situaci, která sedí nejvíc — poradíme, jestli stačí ordinace, nebo volat hned.</p>
+          <div class="triage-intro">
+            <p>Nejste si jistí? Zavolejte — sestra během chvíle řekne, co dál.</p>
+            <a class="btn btn-primary" href="tel:+420777000000">Zavolat +420 777 000 000</a>
+          </div>
+          <div class="triage-grid" data-triage>
+            <div class="triage-item" data-level="wait">
+              <button type="button" class="triage-trigger" aria-expanded="false">
+                <span class="triage-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                </span>
+                <span class="triage-level">Může počkat</span>
+                <strong>Do ordinace</strong>
+                <span class="triage-desc">Lehké potíže a plánovaná péče.</span>
+                <span class="triage-preview">např. lehký kašel · drobné škrábance · očkování</span>
+                <span class="triage-more">Příklady situací</span>
+              </button>
+              <div class="triage-panel">
+                <div class="triage-panel-inner">
+                  <div>
+                    <ul>
+                      <li>lehký kašel bez dušnosti, drobné škrábance</li>
+                      <li>očkování, čipování, kontrola po zákroku bez komplikací</li>
+                      <li>svědění kůže, mírné změny chuti k jídlu</li>
+                    </ul>
+                    <a class="btn btn-outline" href="/design-10/zadost/zadost.html">Požádat o termín</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="triage-item" data-level="today">
+              <button type="button" class="triage-trigger" aria-expanded="false">
+                <span class="triage-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v2a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h2a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L7.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
+                </span>
+                <span class="triage-level">Zavolejte dnes</span>
+                <strong>Ještě dnes</strong>
+                <span class="triage-desc">Zhoršuje se to, ale zvíře dýchá a reaguje.</span>
+                <span class="triage-preview">např. opakované zvracení · kulhání · otok</span>
+                <span class="triage-more">Příklady situací</span>
+              </button>
+              <div class="triage-panel">
+                <div class="triage-panel-inner">
+                  <div>
+                    <ul>
+                      <li>zvracení nebo průjem, který se opakuje</li>
+                      <li>kulhání, bolestivost, otok</li>
+                      <li>nejistota, zda to vydrží do rána</li>
+                    </ul>
+                    <a class="btn btn-primary" href="tel:+420777000000">Zavolat klinice</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="triage-item" data-level="now">
+              <button type="button" class="triage-trigger" aria-expanded="false">
+                <span class="triage-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 4.3 2.6 18a1.8 1.8 0 0 0 1.6 2.7h15.6a1.8 1.8 0 0 0 1.6-2.7L13.7 4.3a1.8 1.8 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+                </span>
+                <span class="triage-level">Teď hned</span>
+                <strong>Okamžitě</strong>
+                <span class="triage-desc">Ohrožení života — nečekejte na ordinační dobu.</span>
+                <span class="triage-preview">např. dušnost · krvácení · otrava</span>
+                <span class="triage-more">Příklady situací</span>
+              </button>
+              <div class="triage-panel">
+                <div class="triage-panel-inner">
+                  <div>
+                    <ul>
+                      <li>dušnost, mdloby, křeče</li>
+                      <li>silné krvácení, srážka s autem</li>
+                      <li>podezření na otravu, neschopnost močit</li>
+                    </ul>
+                    <a class="btn btn-primary" href="tel:+420777000000">Volat +420 777 000 000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="margin-top: 1.5rem">
+            <a class="btn btn-outline" href="/design-10/zadost/pohotovost.html">Kompletní pohotovostní pokyny</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="sluzby-preview">
+        <div class="container reveal">
+          <span class="section-label">Služby</span>
+          <h2 class="section-title">Péče, kterou hledají majitelé na Googlu</h2>
+          <div class="services-bento">
+            <a href="/design-10/zadost/sluzby/ockovani.html">
+              <span class="chip">Nejběžnější</span>
+              <h3>Očkování</h3>
+              <p>Základní i doplňková vakcinace psů a koček.</p>
+            </a>
+            <a href="/design-10/zadost/sluzby/kastrace.html">
+              <span class="chip">Plánované</span>
+              <h3>Kastrace</h3>
+              <p>Plánovaný zákrok včetně pooperačních pokynů.</p>
+            </a>
+            <a href="/design-10/zadost/sluzby/zuby.html">
+              <span class="chip">Prevence</span>
+              <h3>Zuby</h3>
+              <p>Dentální ošetření a prevence zubního kamene.</p>
+            </a>
+            <a href="/design-10/zadost/sluzby/cipovani.html">
+              <span class="chip">Identita</span>
+              <h3>Čipování</h3>
+              <p>Identifikace zvířete a zápis do registru.</p>
+            </a>
+          </div>
+          <p style="margin-top: 1.75rem">
+            <a class="btn btn-outline" href="/design-10/zadost/sluzby/index.html">Všechny služby</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="duvera">
+        <div class="container reveal">
+          <span class="section-label">Důvěra</span>
+          <h2 class="section-title">Co říkají majitelé</h2>
+          <div class="review-rotator" data-review-rotator>
+            <blockquote class="review-quote is-active">
+              <p>„Žádost o termín bez online slotů — potvrzení od sestry přišlo do hodiny. Přehledné.“</p>
+              <cite>Petra K. · majitelka kocoura</cite>
+            </blockquote>
+            <blockquote class="review-quote">
+              <p>„Věděli jsme, jestli volat večer. Triáž na webu ušetřila zbytečný stres.“</p>
+              <cite>Martin S. · majitel labradora</cite>
+            </blockquote>
+            <blockquote class="review-quote">
+              <p>„Dotazník před návštěvou — lékař už věděl o lécích. To ocením.“</p>
+              <cite>Eva N. · majitelka fenky</cite>
+            </blockquote>
+            <div class="review-progress" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about">
+        <div class="container reveal">
+          <span class="section-label">Pro majitele</span>
+          <h2 class="section-title">Často volané otázky — vyřešené předem</h2>
+          <div class="faq-neighbor">
+            <a href="/design-10/zadost/pohotovost.html">
+              <h3>Je to urgentní?</h3>
+              <p>Kam volat večer a o víkendu, co počká do rána.</p>
+            </a>
+            <a href="/design-10/zadost/cenik.html">
+              <h3>Orientační ceny</h3>
+              <p>Očkování, čipování, kastrace a další běžné úkony.</p>
+            </a>
+            <a href="/design-10/zadost/zadost.html">
+              <h3>Žádost o termín</h3>
+              <p>Formulář s preferencemi — potvrzení SMS nebo e-mailem od sestry.</p>
+            </a>
+            <a href="/design-10/zadost/dotaznik.html">
+              <h3>Přednávštěvní dotazník</h3>
+              <p>Léky, alergie, příznaky a souhlas s údaji.</p>
+            </a>
+            <a href="/design-10/zadost/po-zakroku/index.html">
+              <h3>Pokyny po zákroku</h3>
+              <p>Odkazy, které sestra pošle místo telefonátu.</p>
+            </a>
+            <a href="/design-10/zadost/tym.html">
+              <h3>Tým lékařů</h3>
+              <p>Fotky a zaměření — víte, ke komu jdete.</p>
+            </a>
+            <a href="/design-10/zadost/recenze.html">
+              <h3>Google recenze</h3>
+              <p>QR kód na recepci pro hodnocení na Google.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="info">
+        <div class="container reveal">
+          <span class="section-label">U nás ve čtvrti</span>
+          <h2 class="section-title">To nejdůležitější na jednom místě</h2>
+          <div class="info-neighbor">
+            <div>
+              <strong>Ordinační doba</strong>
+              <p>Po–Pá 8:00–18:00<br />So 9:00–12:00</p>
+            </div>
+            <div>
+              <strong>Adresa</strong>
+              <p>Ulice 12<br />110 00 Praha</p>
+            </div>
+            <div>
+              <strong>Parkování</strong>
+              <p>2 místa před klinikou, další na dvoře za budovou.</p>
+            </div>
+            <div>
+              <strong>Noví pacienti</strong>
+              <p>Aktuálně přijímáme nové klienty.</p>
+              <span class="badge-open">Ano, bereme</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="kontakt">
+        <div class="container reveal">
+          <div class="contact-board">
+            <div class="contact-board-copy">
+              <span class="section-label">Kontakt</span>
+              <h2 class="section-title">Zastavte se u nás</h2>
+              <p class="contact-lead">Rádi vás uvidíme — zavolejte, napište, nebo rovnou přijďte.</p>
+              <ul class="contact-list">
+                <li class="stagger-child" style="--stagger: 60ms">
+                  <span class="contact-icon" aria-hidden="true"></span>
+                  <div>
+                    <strong>Telefon</strong>
+                    <a href="tel:+420777000000">+420 777 000 000</a>
+                  </div>
+                </li>
+                <li class="stagger-child" style="--stagger: 120ms">
+                  <span class="contact-icon" aria-hidden="true"></span>
+                  <div>
+                    <strong>E-mail</strong>
+                    <a href="mailto:info@klinika.cz">info@klinika.cz</a>
+                  </div>
+                </li>
+                <li class="stagger-child" style="--stagger: 180ms">
+                  <span class="contact-icon" aria-hidden="true"></span>
+                  <div>
+                    <strong>Adresa</strong>
+                    <span>Ulice 12, 110 00 Praha</span>
+                  </div>
+                </li>
+              </ul>
+              <table class="hours-table">
+                <tr><td>Po–Pá</td><td>8:00–18:00</td></tr>
+                <tr><td>Sobota</td><td>9:00–12:00</td></tr>
+                <tr><td>Neděle</td><td>Zavřeno · viz pohotovost</td></tr>
+              </table>
+            </div>
+            <div class="contact-board-map">
+              <div class="map-placeholder">
+                <span class="map-orb map-orb-a" aria-hidden="true"></span>
+                <span class="map-orb map-orb-b" aria-hidden="true"></span>
+                <span class="map-orb map-orb-c" aria-hidden="true"></span>
+                <svg class="contact-path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                  <path d="M12 82 C 24 70, 28 52, 40 44 S 62 36, 50 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="4 5.5" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+                </svg>
+                <span class="map-pin" aria-hidden="true"></span>
+                <div class="map-placeholder-copy">
+                  <strong>Mapa kliniky</strong>
+                  Placeholder — později doplníte vlastní mapu.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Design 10 · žádost o termín</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script src="../enhance.js"></script>
+  <script src="../../protect.js" defer></script></body>
+</html>

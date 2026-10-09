@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Přednávštěvní dotazník — Veterinární klinika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/design-6/theme.css" />
+  </head>
+  <body class="page-quiz">
+    <header class="site-header is-solid" id="header">
+      <div class="container">
+        <a class="brand" href="/design-6/zadost/index.html">Veterinární klinika</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="/design-6/zadost/sluzby/index.html">Služby</a>
+          <a href="/design-6/zadost/cenik.html">Ceník</a>
+          <a href="/design-6/zadost/pohotovost.html">Pohotovost</a>
+          <a href="/design-6/zadost/tym.html">Tým</a>
+          <a href="/design-6/zadost/galerie.html">Galerie</a>
+          <a href="/design-6/zadost/recenze.html">Recenze</a>
+          <a href="/design-6/zadost/dotaznik.html" aria-current="page">Dotazník</a>
+          <a href="/design-6/zadost/po-zakroku/index.html">Po zákroku</a>
+          <a class="nav-cta" href="/design-6/zadost/zadost.html">Objednat termín</a>
+          <a href="/design-6/zadost/index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero page-hero--quiz">
+        <div class="container quiz-hero-inner">
+          <div class="quiz-hero-copy reveal">
+            <span class="section-label">Dotazník</span>
+            <h1>
+              <span>Přednávštěvní</span>
+              <span>dotazník</span>
+            </h1>
+            <p>
+              Po potvrzení termínu pošle sestra odkaz sem — lékař je připraven
+              dřív, než vstoupíte do ordinace.
+            </p>
+          </div>
+          <div class="quiz-hero-deco" aria-hidden="true">
+            <span class="floral floral--lg floral--drift"></span>
+          </div>
+        </div>
+      </header>
+
+      <section class="quiz-sheet">
+        <div class="container quiz-shell" id="qLayout">
+          <aside class="quiz-aside reveal">
+            <p class="request-aside-kicker">Proč to vyplnit</p>
+            <ol class="request-steps">
+              <li>
+                <span class="request-steps-num">01</span>
+                <div>
+                  <strong>Léky a alergie</strong>
+                  <p>Lékař vidí rizika před vyšetřením.</p>
+                </div>
+              </li>
+              <li>
+                <span class="request-steps-num">02</span>
+                <div>
+                  <strong>Průběh příznaků</strong>
+                  <p>Od kdy a co se změnilo.</p>
+                </div>
+              </li>
+              <li>
+                <span class="request-steps-num">03</span>
+                <div>
+                  <strong>Souhlas</strong>
+                  <p>Zpracování údajů pro vyšetření.</p>
+                </div>
+              </li>
+            </ol>
+            <div class="request-aside-urgent">
+              <span>Doba</span>
+              <strong class="request-aside-value">2–3 minuty</strong>
+              <p>Odesílá se po potvrzení termínu od sestry.</p>
+            </div>
+          </aside>
+
+          <div class="quiz-main reveal">
+            <form class="request-form quiz-form" id="questionnaireForm" novalidate>
+              <div class="request-form-intro">
+                <h2>Vyplňte dotazník</h2>
+                <p>Stručné odpovědi stačí — nic se v ukázce neodesílá.</p>
+              </div>
+
+              <fieldset class="request-block">
+                <legend><span>01</span><span class="request-block-title">Anamnéza</span></legend>
+                <div class="field">
+                  <label for="meds">Aktuální léky</label>
+                  <textarea
+                    id="meds"
+                    name="meds"
+                    rows="3"
+                    placeholder="Názvy léků a dávkování, nebo „žádné“"
+                  ></textarea>
+                </div>
+                <div class="field">
+                  <label for="allergies">Alergie</label>
+                  <textarea
+                    id="allergies"
+                    name="allergies"
+                    rows="2"
+                    placeholder="Léky, krmivo, jiné…"
+                  ></textarea>
+                </div>
+              </fieldset>
+
+              <fieldset class="request-block">
+                <legend><span>02</span><span class="request-block-title">Průběh</span></legend>
+                <div class="field">
+                  <label for="symptoms">Vývoj příznaků</label>
+                  <textarea
+                    id="symptoms"
+                    name="symptoms"
+                    rows="3"
+                    placeholder="Od kdy, co se zhoršilo nebo zlepšilo"
+                  ></textarea>
+                </div>
+              </fieldset>
+
+              <fieldset class="request-block">
+                <legend><span>03</span><span class="request-block-title">Kontakt</span></legend>
+                <div class="field">
+                  <label for="email">Váš e-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="vas@email.cz"
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset class="request-block">
+                <legend><span>04</span><span class="request-block-title">Souhlas</span></legend>
+                <div class="field field--consent">
+                  <label class="consent-row quiz-consent" for="consent">
+                    <input type="checkbox" id="consent" name="consent" required />
+                    <span>
+                      Souhlasím se zpracováním údajů pro účely vyšetření
+                      (ukázkový text GDPR).
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="request-form-actions quiz-actions">
+                <p class="note">Odpovědi v ukázce nikam neodesíláme.</p>
+                <button class="btn btn-primary" type="submit">Odeslat dotazník</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="container quiz-success-wrap" id="qSuccessWrap" hidden>
+          <div class="form-success quiz-success" id="qSuccess">
+            <span class="quiz-success-mark" aria-hidden="true"></span>
+            <h3>Dotazník odeslán</h3>
+            <p>V ostré verzi by odpovědi viděl tým před příchodem pacienta.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Veterinární klinika</span>
+        <span>Praha</span>
+      </div>
+    </footer>
+    <script src="/shared/site.js"></script>
+    <script>
+      document.getElementById("questionnaireForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!this.checkValidity()) {
+          this.reportValidity();
+          return;
+        }
+        var layout = document.getElementById("qLayout");
+        var wrap = document.getElementById("qSuccessWrap");
+        var success = document.getElementById("qSuccess");
+        if (layout) layout.hidden = true;
+        this.hidden = true;
+        document.body.classList.add("quiz-done");
+        if (wrap) wrap.hidden = false;
+        if (success) success.classList.add("is-visible");
+        if (wrap) wrap.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    </script>
+  <script src="../../protect.js" defer></script></body>
+</html>
