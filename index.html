@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Šablony veterinárních klinik</title>
+    <meta
+      name="description"
+      content="Rozcestník šablon webu veterinární kliniky. Prezentační verze a verze se žádostí o termín."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f3efe6;
+        --ink: #1c1915;
+        --muted: #5e574e;
+        --line: rgba(28, 25, 21, 0.12);
+        --card: #fffdf8;
+        --shadow: 0 16px 40px rgba(48, 36, 18, 0.06);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(900px 420px at 100% -10%, rgba(184, 149, 74, 0.18), transparent 60%),
+          var(--bg);
+        font-family: Outfit, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 3.5rem 0 1.5rem;
+      }
+
+      .kicker {
+        margin: 0 0 0.6rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #8a5a22;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Fraunces, Georgia, serif;
+        font-size: clamp(2.4rem, 5vw, 4.4rem);
+        font-weight: 520;
+        letter-spacing: -0.03em;
+        line-height: 0.95;
+      }
+
+      .lead {
+        max-width: 38rem;
+        margin: 1rem 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1rem;
+        padding: 1.5rem 0 4rem;
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1.1rem;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .swatch {
+        height: 0.55rem;
+        background: var(--tone);
+      }
+
+      .body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+        height: 100%;
+        padding: 1.15rem 1.15rem 1.2rem;
+      }
+
+      .num {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0.15rem 0 0;
+        font-family: Fraunces, Georgia, serif;
+        font-size: 1.7rem;
+        font-weight: 560;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: auto;
+        padding-top: 0.4rem;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.4rem;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        text-decoration: none;
+        font-size: 0.92rem;
+        font-weight: 550;
+      }
+
+      a:hover,
+      a:focus-visible {
+        background: var(--ink);
+        color: #fffdf8;
+        border-color: var(--ink);
+      }
+
+      a.primary {
+        background: var(--ink);
+        color: #fffdf8;
+        border-color: var(--ink);
+      }
+
+      a.primary:hover,
+      a.primary:focus-visible {
+        background: transparent;
+        color: var(--ink);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <p class="kicker">Veterinární klinika</p>
+        <h1>Šablony webu</h1>
+        <p class="lead">
+          Vyberte vzhled. U většiny šablon jsou dvě verze: prezentační web a web se žádostí o termín.
+        </p>
+      </header>
+      <main class="grid">
+        <article style="--tone: #f7cf9b">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">18</p>
+            <h2>Citrine</h2>
+            <p>Teplá, laskavá klinika pro psy, kočky a další domácí mazlíčky.</p>
+            <div class="actions">
+              <a class="primary" href="design-18/prezentacni/index.html">Prezentační</a>
+              <a href="design-18/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #6b2a22">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">17</p>
+            <h2>Vitae</h2>
+            <p>Péče o koně, psy a kočky. Jedna verze webu.</p>
+            <div class="actions">
+              <a class="primary" href="design-17/index.html">Otevřít šablonu</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #e2aba5">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">16</p>
+            <h2>Velvet</h2>
+            <p>Klinika zaměřená výhradně na kočky.</p>
+            <div class="actions">
+              <a class="primary" href="design-16/prezentacni/index.html">Prezentační</a>
+              <a href="design-16/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #eed0a8">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">15</p>
+            <h2>Atlas Vet</h2>
+            <p>Ortopedie a rehabilitace psů, tmavý prémiový vzhled.</p>
+            <div class="actions">
+              <a class="primary" href="design-15/prezentacni/index.html">Prezentační</a>
+              <a href="design-15/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #1d321e">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">14</p>
+            <h2>Terra</h2>
+            <p>Přírodní klinika pro psy, kočky a koně.</p>
+            <div class="actions">
+              <a class="primary" href="design-14/prezentacni/index.html">Prezentační</a>
+              <a href="design-14/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #2d382b">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">13</p>
+            <h2>Equilibra</h2>
+            <p>Veterinární péče zaměřená jen na koně. Jedna verze webu.</p>
+            <div class="actions">
+              <a class="primary" href="design-13/index.html">Otevřít šablonu</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #1b3c5c">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">12</p>
+            <h2>Zenith</h2>
+            <p>Moderní klinika s důrazem na vědu a zkušenost.</p>
+            <div class="actions">
+              <a class="primary" href="design-12/prezentacni/index.html">Prezentační</a>
+              <a href="design-12/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #33261c">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">11</p>
+            <h2>Maison</h2>
+            <p>Klidný, řemeslný web s teplými tóny.</p>
+            <div class="actions">
+              <a class="primary" href="design-11/prezentacni/index.html">Prezentační</a>
+              <a href="design-11/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #3d8fd1">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">10</p>
+            <h2>Slunečná</h2>
+            <p>Světlá a hravá šablona, modrá se žlutým akcentem.</p>
+            <div class="actions">
+              <a class="primary" href="design-10/prezentacni/index.html">Prezentační</a>
+              <a href="design-10/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #b8954a">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">9</p>
+            <h2>Zlatá</h2>
+            <p>Tmavě modrá a zlatá, výrazný nadpisový řez.</p>
+            <div class="actions">
+              <a class="primary" href="design-9/prezentacni/index.html">Prezentační</a>
+              <a href="design-9/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #c45a2c">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">8</p>
+            <h2>Ocel</h2>
+            <p>Kontrastní, technický vzhled s rezavým akcentem.</p>
+            <div class="actions">
+              <a class="primary" href="design-8/prezentacni/index.html">Prezentační</a>
+              <a href="design-8/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #4f7a5c">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">7</p>
+            <h2>Botanická</h2>
+            <p>Mechově zelený, klidný žurnálový layout.</p>
+            <div class="actions">
+              <a class="primary" href="design-7/prezentacni/index.html">Prezentační</a>
+              <a href="design-7/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #b85c4c">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">6</p>
+            <h2>Lumière</h2>
+            <p>Broskvová, měkká šablona bez ostrých hran.</p>
+            <div class="actions">
+              <a class="primary" href="design-6/prezentacni/index.html">Prezentační</a>
+              <a href="design-6/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #e25a3c">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">5</p>
+            <h2>Korálová</h2>
+            <p>Teplá a přívětivá, korálová s mátovým doplňkem.</p>
+            <div class="actions">
+              <a class="primary" href="design-5/prezentacni/index.html">Prezentační</a>
+              <a href="design-5/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #8d7355">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">4</p>
+            <h2>Vitae raná</h2>
+            <p>Dřívější verze Vitae, světlá a typografická.</p>
+            <div class="actions">
+              <a class="primary" href="design-4/prezentacni/index.html">Prezentační</a>
+              <a href="design-4/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #9a74b8">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">3</p>
+            <h2>Opal</h2>
+            <p>Noční petrolejová atmosféra s šeříkovým akcentem.</p>
+            <div class="actions">
+              <a class="primary" href="design-3/prezentacni/index.html">Prezentační</a>
+              <a href="design-3/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #2b6cb0">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">2</p>
+            <h2>Klinická</h2>
+            <p>Čistá modrá šablona, přehledná a střídmá.</p>
+            <div class="actions">
+              <a class="primary" href="design-2/prezentacni/index.html">Prezentační</a>
+              <a href="design-2/zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+        <article style="--tone: #1b5c4c">
+          <div class="swatch"></div>
+          <div class="body">
+            <p class="num">Základ</p>
+            <h2>Lesní</h2>
+            <p>Sdílená zelená šablona v kořeni projektu.</p>
+            <div class="actions">
+              <a class="primary" href="prezentacni/index.html">Prezentační</a>
+              <a href="zadost/index.html">Se žádostí</a>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
